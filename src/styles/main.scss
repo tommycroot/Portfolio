@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  background-color: #e4f2ff;
+
+}
+
+h1{
+  font-family: 'Shadows Into Light', cursive !important;
+  position: relative;
+  z-index: 9999;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  @extend %flex-center;
+  background-color: #e4f2ff;
+  padding: 0px;
+
+  .hero {
+    text-align: center;
+    background-color: #e4f2ff;
+    border-radius: 8px;
+  }
+}
+
+#sun {
+  height:85px;
+  width: 85px;
+  position: relative;
+  z-index: 9999;
+}
+
+.about {
+  @extend %flex-center;
+  flex-direction: column;
+  background-color: #e4f2ff;
+
+  .about-hero {
+    text-align: center;
+    padding: 20px;
+    background-color:#e4f2ff ;
+    border-radius: 8px;
+  }
+}
+
+h2{
+  font-size: 28px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #00c5ff;
+  margin-bottom: 20px;
+}
+
+#homep{
+  margin-top: 10px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  color: #00c5ff;
+}
+#beach {
+  width: 100%;
+  max-width: 500px;
+  transition: opacity 1s ease-in-out;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#beach:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+#beach.active {
+  opacity: 1;
+  z-index: 0;
+}
+
+.portfolio-nav{
+  z-index: 9999;
+}
+
+@media (max-width: 767px) {
+  #beach {
+    max-width: 92%;
+    max-width: 400px;
+    max-height: 200px !important;
+  }
+}
+
+.about {
+  text-align: center;
+  padding: 20px;
+  background-color: #e4f2ff;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .about {
+    text-align: center;
+    padding: 20px;
+    background-color: #e4f2ff;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+}
+.navbar {
+  height: 60px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-row .nav-link {
+  padding: 0 1rem;
+}
+#aboutp{
+  font-size: 18px;
+  color: black;
+  font-family: 'Shadows Into Light', cursive !important;
+  font-weight:400;
+  max-width: 600px;
+  text-align: center;
+}
+.nav {
+  max-width: 1320px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vh !important;
+  font-family: 'Shadows Into Light', cursive !important;
+  font-size: 24px;
+  color: #00c5ff !important;
+    .nav-item{
+      width: 160px;
+      text-align: right;
+      font-family: 'Shadows Into Light', cursive !important;
+      color: #00c5ff;
+    
+      .nav-link {
+        color: #898989;;
+        font-weight: 600;
+        font-family: 'Shadows Into Light', cursive;
+        &:hover, &.active {
+          background-color: #9d008d99 !important;
+          color: #000;
+          font-weight: 600;
+        }
+      }
+    }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    font-size: 16px;
+    color: #00c5ff !important;
+    padding: 0px !important;
+  }
+}
+
+.navbar .nav-link {
+  font-family: 'Shadows Into Light', cursive !important;
+  color: #db23c7 !important;
+}
+
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4f2ff;
+  
+}
+
+main {
+  flex-grow: 1;
+  padding: 2em 0;
+  background-color: beige;
+}
+
+.nav-link.active {
+  background-color: #9d008d99 !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .nav-link.active {
+  background-color: transparent !important;
+  color: #db23c7 !important;
+  font-size: 20px !important;
+  }
+  }
+
+
+#skills {
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive !important;
+  color: #00c5ff !important;
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.proLinks {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: transparent;
+    a{
+      background-color: #cdedf6;
+      padding: 0px;
+    }
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive !important;
+  color: #00c5ff !important;
+  font-size: 24px;
+}
+
+#spanHome{
+  color:#db23c7;
+}
+
+.card{
+  border: none;
+  border-radius: 20px;
+  background-color: #cdedf6;
+  margin-bottom: 20px;
+}
+#cardImg {
+  width: 100%;
+  max-width: 300px;
+  max-height: 140px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.card-body{
+  background-color: #cdedf6;
+  border-radius: 30px;
+}
+.card-text{
+  width: 400px;
+  background-color: #cdedf6;
+  font-size: 18px;
+  font-family: 'Shadows Into Light', cursive !important;
+  font-weight:500;
+}
+
+.backImg{
+  background-color: #cdedf6;
+}
+
+.card-title{
+  background-color: #cdedf6;
+  font-family: 'Shadows Into Light', cursive !important;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  
+}
+
+.container{
+  margin-bottom: 20px;
+}
+
+#projectTitle{
+  margin-bottom: 25px;
+  margin-top: 15px;
+  color: #00c5ff;
+  font-size: 40px;
+}
+@media (max-width: 767px) {
+  #projects {
+    width: 320px;
+    margin-right:20px;
+  }
+  .card-body{
+    width: 320px;
+  }
+  .card-text{
+    width:300px;
+    padding-right:10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-body{
+    width: 400px;
+  }
+  .card-text{
+    width: 380px;
+    padding-right: 10px;
+  }
+  .card-image{
+    width:100%;
+    max-width: 300px;
+  }
+}
+
+#back-to-top{
+  border: none;
+  font-family: 'Shadows Into Light', cursive !important;
+  color: #db23c7;
+  font-size: 26px;
+}
+
+.giphy-img {
+  animation-name: drop-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  background: transparent;
+}
+
+@keyframes drop-in {
+  from {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#skillsP{
+  font-family: 'Shadows Into Light', cursive !important;
+  color: black; 
+  text-align: left;
+}
+
+#skillSpan{
+  font-family: 'Shadows Into Light', cursive !important;
+  color: #db23c7; 
+  font-size: 18px;
+  font-weight:600;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 280px;
+}
+
+.image-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+@media (max-width: 767px) {
+  .image-container{
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px; 
+    height: 220px; 
+
+  }
+  .image-container img {
+    width: 330px; 
+    height: 280px; 
+  }
+}
