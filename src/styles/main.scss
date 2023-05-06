@@ -96,6 +96,12 @@ h2{
   }
 }
 
+@media (max-width: 767px) {
+  .hero {
+    margin-bottom: 100px;
+  }
+}
+
 .about {
   text-align: center;
   padding: 20px;
