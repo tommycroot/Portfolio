@@ -8,6 +8,7 @@ import hagl from '../images/hagl.png'
 import giphy from '../images/giphy.gif'
 import moms from '../images/moms.png'
 import frogger from '../images/frogger.png'
+import footy from '../images/footy.png'
 
 
 const Projects = () => {
