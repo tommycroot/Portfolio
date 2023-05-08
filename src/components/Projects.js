@@ -22,15 +22,16 @@ const Projects = () => {
               <Col>
                 <Card >
                   <Card.Body>
-                    <Card.Title id="cardTitle">Project 4 - Footy Diary!</Card.Title>
+                    <Card.Title id="cardTitle">Project 4 - Footy Diary</Card.Title>
                     <div className='backImg'>
-                      <img id="cardImg" src={hagl}></img>
+                      <img id="cardImg" src={footy}></img>
                     </div>
                     <div className='proLinks'>
-                      <p id="aboutlink"><Link to="https://momsspaghetti.netlify.app/"> App Link</Link></p>
+                      <p id="aboutlink"><Link to="https://footydiary.herokuapp.com/"> App Link</Link></p>
                       <p id="aboutlink"><Link to="https://github.com/tommycroot/project-3#readme"> README </Link></p>
                     </div>
-                    <Card.Text>This was a week-long challenge to create a full-stack MERN app (MongoDB, Express.js, React.js and Node.js) with CRUD functionality. In a group of three, we built an online marketplace that gives users the ability to swap their used items with each other. We all worked full-stack on this project, but I focused on back-end configurations and took responsibility for the forms on the front-end covering the login and registration pages, as well as the edit page.</Card.Text>
+                    <Card.Text>For our final project we were individually tasked with creating a full-stack app with CRUD functionality using a Python Django API with Django REST framework that served data from an SQL database and a front-end built with React.js. This project lasted just over a week and I created an app that allowed users to keep track of all football matches that they have attended, as well as who they went with and the details of the match.
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
