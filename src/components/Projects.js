@@ -31,7 +31,7 @@ const Projects = () => {
                       <p id="aboutlink"><Link to="https://footydiary.herokuapp.com/"> App Link</Link></p>
                       <p id="aboutlink"><Link to="https://github.com/tommycroot/project-3#readme"> README </Link></p>
                     </div>
-                    <Card.Text>For our final project we were individually tasked with creating a full-stack app with CRUD functionality using a Python Django API with Django REST framework that served data from an SQL database and a front-end built with React.js. This project lasted just over a week and I created an app that allowed users to keep track of all football matches that they have attended, as well as who they went with and the details of the match.
+                    <Card.Text>For our final project we were individually tasked with creating a full-stack app with CRUD functionality using a Python Django API with Django REST framework that served data from an SQL database and a front-end built with React.js. This project lasted just over a week and I created an app that allowed users to keep track of all football matches that they have attended, as well as who they went with and the details of the match. I am still working on this project.
                     </Card.Text>
                   </Card.Body>
                 </Card>
