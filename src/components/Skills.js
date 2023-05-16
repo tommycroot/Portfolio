@@ -39,7 +39,7 @@ const Skills = () => {
         <p id="skillsP"><span id="skillSpan">Storage:</span> Heroku</p>
         <p id="skillsP"><span id="skillSpan">Version Control:</span> Git/GitHub</p>
         <p id="skillsP"><span id="skillSpan">Security:</span> Bcrypt, JSON Web Token</p>
-        <p id="skillsP"><span id="skillSpan">Other:</span> Slack, Trello</p>
+        <p id="skillsP"><span id="skillSpan">Other:</span> Netlify, Slack, Trello, Excalidraw, Figma</p>
         <p id="skillsP"><span id="skillSpan">Soft:</span> Communication, Creative Writing, Team Management, Project Management, Collaboration</p>
       </div>
     </main>
