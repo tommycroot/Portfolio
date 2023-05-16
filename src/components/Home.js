@@ -3,6 +3,7 @@ import home1 from '../images/home1.jpg'
 import home3 from '../images/home3.jpg'
 import home4 from '../images/home4.jpg'
 import home5 from '../images/home5.jpg'
+import home6 from '../images/home6.jpg'
 import { useEffect, useState } from 'react'
 import giphy from '../images/giphy.gif'
 
@@ -10,7 +11,7 @@ import giphy from '../images/giphy.gif'
 
 
 const Home = () => {
-  const images = [home1, home2, home3, home4, home5]
+  const images = [home5, home1, home2, home3, home4, home6]
   const [index, setIndex] = useState(0)
   const [showHeader, setShowHeader] = useState(false)
   const [showSubheader, setShowSubheader] = useState(false)
@@ -37,8 +38,8 @@ const Home = () => {
     <main className="home">
       <div className="hero">
         <img id="sun" src={giphy} className="giphy-img"></img>
-        <h1 className={`display-3 fade-in ${showHeader ? 'show' : ''}`}>Thomas Croot</h1>
-        <h2 className={`fade-in ${showSubheader ? 'show' : ''}`}>Junior Software Engineer</h2>
+        <h1 id="tom" className={`display-3 fade-in ${showHeader ? 'show' : ''}`}>Thomas Croot</h1>
+        <h2 id="junior" className={`fade-in ${showSubheader ? 'show' : ''}`}>Junior Software Engineer</h2>
 
         <div className='image-container'>
           <img id="beach" src={images[index]} className={`fade-in ${showImage ? 'show' : ''}`}></img>

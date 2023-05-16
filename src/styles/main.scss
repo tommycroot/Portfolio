@@ -1,16 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two:wght@300;400;700&display=swap');
 
+body {
+  background-color: #e4f2ff;
+}
 * {
   box-sizing: border-box;
   background-color: #e4f2ff;
 
 }
 
-h1{
-  font-family: 'Shadows Into Light', cursive !important;
+h1 {
+  font-family: 'Shadows Into Light Two', cursive !important;
+  color: #00c5ff;
   position: relative;
   z-index: 9999;
+}
+#tom{
+  font-weight: 600;
+}
+#junior {
+  color: #3c45b4f0;
+  font-weight: 600;
 }
 
 %flex-center {
@@ -18,6 +30,7 @@ h1{
   justify-content: center;
   align-items: center;
 }
+
 .home {
   @extend %flex-center;
   background-color: #e4f2ff;
@@ -31,12 +44,24 @@ h1{
 }
 
 #sun {
-  height:85px;
+  height: 85px;
   width: 85px;
   position: relative;
   z-index: 9999;
 }
 
+#ball{
+  height: 100px;
+  width: 100px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+#music{
+  height:85px;
+  width: 85px;
+  margin-bottom: 25px;
+}
 .about {
   @extend %flex-center;
   flex-direction: column;
@@ -45,24 +70,25 @@ h1{
   .about-hero {
     text-align: center;
     padding: 20px;
-    background-color:#e4f2ff ;
+    background-color: #e4f2ff;
     border-radius: 8px;
   }
 }
 
-h2{
+h2 {
   font-size: 28px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
   color: #00c5ff;
   margin-bottom: 20px;
 }
 
-#homep{
+#homep {
   margin-top: 10px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
   font-size: 20px;
   color: #00c5ff;
 }
+
 #beach {
   width: 100%;
   max-width: 500px;
@@ -83,8 +109,8 @@ h2{
   opacity: 1;
   z-index: 0;
 }
-#d9edff
-.portfolio-nav{
+
+.portfolio-nav {
   z-index: 9999;
 }
 
@@ -118,6 +144,7 @@ h2{
     margin-top: 50px;
   }
 }
+
 .navbar {
   height: 60px;
 }
@@ -138,14 +165,17 @@ h2{
 .flex-row .nav-link {
   padding: 0 1rem;
 }
-#aboutp{
-  font-size: 18px;
+
+#aboutp {
+  font-size: 22px;
   color: black;
-  font-family: 'Shadows Into Light', cursive !important;
-  font-weight:400;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-weight: 500;
   max-width: 600px;
   text-align: center;
+  z-index: 1 !important;
 }
+
 .nav {
   max-width: 1320px;
   padding: 20px;
@@ -154,26 +184,30 @@ h2{
   display: flex;
   justify-content: space-evenly;
   width: 100vh !important;
-  font-family: 'Shadows Into Light', cursive !important;
+  font-family: 'Shadows Into Light Two', cursive !important;
   font-size: 24px;
   color: #00c5ff !important;
-    .nav-item{
-      width: 160px;
-      text-align: right;
-      font-family: 'Shadows Into Light', cursive !important;
-      color: #00c5ff;
-    
-      .nav-link {
-        color: #898989;;
+
+  .nav-item {
+    width: 160px;
+    text-align: right;
+    font-family: 'Shadows Into Light Two', cursive !important;
+    color: #00c5ff;
+
+    .nav-link {
+      color: #898989;
+      ;
+      font-weight: 600;
+      font-family: 'Shadows Into Light Two', cursive;
+
+      &:hover,
+      &.active {
+        background-color: #9d008d99 !important;
+        color: #000;
         font-weight: 600;
-        font-family: 'Shadows Into Light', cursive;
-        &:hover, &.active {
-          background-color: #9d008d99 !important;
-          color: #000;
-          font-weight: 600;
-        }
       }
     }
+  }
 }
 
 @media (max-width: 767px) {
@@ -185,7 +219,7 @@ h2{
 }
 
 .navbar .nav-link {
-  font-family: 'Shadows Into Light', cursive !important;
+  font-family: 'Shadows Into Light Two', cursive !important;
   color: #db23c7 !important;
 }
 
@@ -195,7 +229,7 @@ h2{
   flex-direction: column;
   min-height: 100vh;
   background-color: #e4f2ff;
-  
+
 }
 
 main {
@@ -213,19 +247,13 @@ main {
 
 @media (max-width: 767px) {
   .nav-link.active {
-  background-color: transparent !important;
-  color: #db23c7 !important;
-  font-size: 20px !important;
+    background-color: transparent !important;
+    color: #db23c7 !important;
+    font-size: 20px !important;
   }
-  }
-
-
-#skills {
-  text-decoration: none;
-  font-family: 'Shadows Into Light', cursive !important;
-  color: #00c5ff !important;
-  font-size: 24px;
 }
+
+
 
 .links {
   display: flex;
@@ -237,29 +265,32 @@ main {
   display: flex;
   justify-content: space-evenly;
   background-color: transparent;
-    a{
-      background-color: #cdedf6;
-      padding: 0px;
-    }
+
+  a {
+    background-color: #cdedf6;
+    padding: 0px;
+  }
 }
 
-a{
+a {
   text-decoration: none;
   font-family: 'Shadows Into Light', cursive !important;
-  color: #00c5ff !important;
-  font-size: 24px;
+  color: lightcoral!important;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-#spanHome{
-  color:#db23c7;
+#spanHome {
+  color: #db23c7;
 }
 
-.card{
-  border: none;
+.card {
+  border: 1px solid rgb(68, 63, 63);
   border-radius: 20px;
   background-color: #cdedf6;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
+
 #cardImg {
   width: 100%;
   max-width: 300px;
@@ -267,72 +298,87 @@ a{
   border-radius: 15px;
   margin-bottom: 15px;
 }
-.card-body{
+
+.card-body {
   background-color: #cdedf6;
   border-radius: 30px;
 }
-.card-text{
+
+.card-text {
   width: 400px;
   background-color: #cdedf6;
   font-size: 18px;
-  font-family: 'Shadows Into Light', cursive !important;
-  font-weight:500;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-weight: 600;
+  color: black;
 }
 
-.backImg{
+.backImg {
   background-color: #cdedf6;
 }
 
-.card-title{
+.card-title {
   background-color: #cdedf6;
-  font-family: 'Shadows Into Light', cursive !important;
-  font-size: 34px;
-  font-weight: 400;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-size: 30px;
+  font-weight: 600;
   margin-bottom: 25px;
-  
+  color: #3c45b4f0;
+
 }
 
-.container{
+.container {
   margin-bottom: 20px;
 }
 
-#projectTitle{
-  margin-bottom: 25px;
+#projectTitle {
+  margin-bottom: 10px;
   margin-top: 15px;
   color: #00c5ff;
-  font-size: 40px;
+  font-size: 50px;
 }
+
 @media (max-width: 767px) {
   #projects {
     width: 320px;
-    margin-right:20px;
+    margin-right: 20px;
   }
-  .card-body{
+  .card{
+    border:none;
     width: 320px;
+    margin-bottom: 35px;
   }
-  .card-text{
-    width:300px;
-    padding-right:10px;
+  .card-body {
+    width: 320px;
+  
+   
+  }
+
+  .card-text {
+    width: 280px;
+    padding-right: 10px;
   }
 }
 
 @media (min-width: 900px) {
-  .card-body{
+  .card-body {
     width: 400px;
   }
-  .card-text{
+
+  .card-text {
     width: 380px;
     padding-right: 10px;
   }
-  .card-image{
-    width:100%;
+
+  .card-image {
+    width: 100%;
     max-width: 300px;
   }
 }
 
-#back-to-top{
+#back-to-top {
   border: none;
-  font-family: 'Shadows Into Light', cursive !important;
+  font-family: 'Shadows Into Light Two', cursive !important;
   color: #db23c7;
   font-size: 26px;
 }
@@ -348,22 +394,28 @@ a{
   from {
     transform: translateY(-80%);
   }
+
   to {
     transform: translateY(0);
   }
 }
 
-#skillsP{
-  font-family: 'Shadows Into Light', cursive !important;
-  color: black; 
+#skillsP {
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-size: 22px;
+  color: black;
   text-align: left;
+  background: none;
+  z-index: 0;
 }
 
-#skillSpan{
-  font-family: 'Shadows Into Light', cursive !important;
-  color: #db23c7; 
-  font-size: 18px;
-  font-weight:600;
+#skillSpan {
+  font-family: 'Shadows Into Light Two', cursive !important;
+  color: #3c45b4f0;
+  font-size: 28px;
+  background: none;
+  font-weight: 600;
+  z-index: 0;
 }
 
 .image-container {
@@ -375,24 +427,54 @@ a{
 }
 
 .image-container img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 767px) {
-  .image-container{
+  .image-container {
     padding: 0px;
     border: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 330px; 
-    height: 220px; 
+    width: 330px;
+    height: 220px;
 
   }
+
   .image-container img {
-    width: 330px; 
-    height: 280px; 
+    width: 330px;
+    height: 280px;
   }
+}
+
+#me {
+  height: 160px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+#ice {
+  height: 180px;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  opacity: 1;
+  animation: spin 2s linear forwards;
+}
+
+#ice.active {
+  opacity: 1;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#wave{
+  height: 60px;
+  margin-bottom: 50px;
 }
