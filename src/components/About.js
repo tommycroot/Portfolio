@@ -18,6 +18,13 @@ const About = () => {
     return () => clearInterval(intervalId)
   }, [images.length])
 
+  useEffect(() => {
+    document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('touchstart', function () {
+        window.scrollTo(0, 0)
+      })
+    })
+  }, [])
 
   return (
     <main className="about">
@@ -41,11 +48,10 @@ const About = () => {
         </div>
       </div>
       <button id="back-to-top" onClick={() => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
-        })
-        document.documentElement.scrollTop = 0
+        window.scrollTo(0, document.body.scrollHeight)
+        setTimeout(() => {
+          window.scrollTo(0, 0)
+        }, 100)
       }}>Back To Top</button>
     </main>
   )

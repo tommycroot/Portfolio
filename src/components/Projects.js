@@ -17,6 +17,12 @@ const Projects = () => {
   const [showImage, setShowImage] = useState(false)
 
   useEffect(() => {
+    document.addEventListener('DOMContentLoaded', function() {
+      window.addEventListener('touchstart', function() {
+        window.scrollTo(0, 0)
+      })
+    })
+    
     setTimeout(() => {
       setShowImage(true)
     }, 1000)
@@ -100,11 +106,10 @@ const Projects = () => {
         </div>
       </div>
       <button id="back-to-top" onClick={() => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
-        })
-        document.documentElement.scrollTop = 0
+        window.scrollTo(0, document.body.scrollHeight)
+        setTimeout(() => {
+          window.scrollTo(0, 0)
+        }, 100)
       }}>Back To Top</button>
     </main>
   )
