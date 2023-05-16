@@ -48,7 +48,7 @@ const About = () => {
         </div>
       </div>
       <button id="back-to-top" onClick={() => {
-        window.scrollTo(0, document.body.scrollHeight)
+        window.scrollTo(0, 0)
         setTimeout(() => {
           window.scrollTo(0, 0)
         }, 100)
