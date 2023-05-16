@@ -99,7 +99,13 @@ const Projects = () => {
           </Container>
         </div>
       </div>
-      <button id="back-to-top" onClick={() => window.scrollTo(0, 0)}>Back To Top</button>
+      <button id="back-to-top" onClick={() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
+        document.documentElement.scrollTop = 0
+      }}>Back To Top</button>
     </main>
   )
 }

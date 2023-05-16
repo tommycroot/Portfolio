@@ -40,7 +40,13 @@ const About = () => {
           <p id="aboutp">I spent much of my life playing sports and I still enjoy working out and being active. Running is something I particularly enjoy because it helps clear my mind and provides me with ample time to reflect. I&apos;m a big fan of football, skateboarding, American sports and I&apos;m also a lifelong wrestling fan.</p>
         </div>
       </div>
-      <button id="back-to-top" onClick={() => window.scrollTo(0, 0)}>Back To Top</button>
+      <button id="back-to-top" onClick={() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
+        document.documentElement.scrollTop = 0
+      }}>Back To Top</button>
     </main>
   )
 }
