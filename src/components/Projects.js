@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Button from 'react-bootstrap/Button'
+import { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -13,12 +13,22 @@ import wave from '../images/wave.gif'
 
 
 const Projects = () => {
+
+  const [showImage, setShowImage] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowImage(true)
+    }, 1000)
+  }, [])
+
+
   return (
     <main className='about'>
       <img id="sun" src={giphy} className="giphy-img"></img>
       <div className="hero">
         <h1 className='display-3' id="projectTitle">Projects</h1>
-        <img id="wave" src={wave}></img>
+        <img id="wave" src={wave} className={`fade-in ${showImage ? 'show' : ''}`}></img>
         <div className='wrap'>
           <Container id="projects" md={6} sm={6}>
             <Row xs={1} md={2}>
