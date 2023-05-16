@@ -453,6 +453,13 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .home {
+    max-height: 700px;
+    max-width: 380px;
+  }
+}
+
 #me {
   height: 160px;
   width: 150px;
