@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two:wght@300;400;700&display=swap');
 
 body {
-  background-color: #e4f2ff;
+  background-color: #daeeff;
 }
 * {
   box-sizing: border-box;
-  background-color: #e4f2ff;
+  background-color: #daeeff;
 
 }
 
@@ -35,12 +35,12 @@ h1 {
 
 .home {
   @extend %flex-center;
-  background-color: #e4f2ff;
+  background-color: #daeeff;
   padding: 0px;
 
   .hero {
     text-align: center;
-    background-color: #e4f2ff;
+    background-color: #daeeff;
     border-radius: 8px;
   }
 }
@@ -67,12 +67,12 @@ h1 {
 .about {
   @extend %flex-center;
   flex-direction: column;
-  background-color: #e4f2ff;
+  background-color: #daeeff;
 
   .about-hero {
     text-align: center;
     padding: 20px;
-    background-color: #e4f2ff;
+    background-color: #daeeff;
     border-radius: 8px;
   }
 }
@@ -138,7 +138,7 @@ h2 {
 .about {
   text-align: center;
   padding: 20px;
-  background-color: #e4f2ff;
+  background-color: #daeeff;
   border-radius: 8px;
 }
 
@@ -146,7 +146,7 @@ h2 {
   .about {
     text-align: center;
     padding: 20px;
-    background-color: #e4f2ff;
+    background-color: #daeeff;
     border-radius: 8px;
     margin-top: 50px;
   }
@@ -236,7 +236,7 @@ h2 {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #e4f2ff;
+  background-color: #daeeff;
 
 }
 
