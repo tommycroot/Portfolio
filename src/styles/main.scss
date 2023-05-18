@@ -203,7 +203,6 @@ h2 {
 
     .nav-link {
       color: #898989;
-      ;
       font-weight: 600;
       font-family: 'Shadows Into Light Two', cursive;
 
@@ -219,7 +218,7 @@ h2 {
 
 @media (max-width: 767px) {
   .nav {
-    font-size: 16px;
+    font-size: 18px;
     color: #00c5ff !important;
     padding: 0px !important;
   }
@@ -297,6 +296,7 @@ a {
   border-radius: 20px;
   background-color: #cdedf6;
   margin-bottom: 40px;
+  box-shadow:  6px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 #cardImg {
@@ -360,6 +360,7 @@ a {
     border:none;
     width: 320px;
     margin-bottom: 35px;
+    box-shadow:  6px 10px 0 rgba(0,0,0,.2);
   }
   .card-body {
     width: 320px;
