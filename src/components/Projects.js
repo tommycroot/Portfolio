@@ -88,7 +88,7 @@ const Projects = () => {
                       <p id="aboutlink"><Link to="https://momsspaghetti.netlify.app/" target="_blank"> App Link</Link></p>
                       <p id="aboutlink"><Link to="https://github.com/tommycroot/project2#readme" target="_blank"> README </Link></p>
                     </div>
-                    <Card.Text>This challenge involved us working in pairs over a day and a half to develop a React App with an external API, using Bulma as our framework. The rhyming dictionary app provides an index of rhyming words related to the word a user searches for, as well as the ability to generate a random word if the user is lacking inspiration. </Card.Text>
+                    <Card.Text>This challenge involved us working in pairs over a day and a half to develop a React App with an external API. The rhyming dictionary app uses two APIs, it provides an index of rhyming words related to the word a user searches for, as well as the ability to generate a random word if the user is lacking inspiration. </Card.Text>
                   </Card.Body>
                 </Card>
               </Col>
