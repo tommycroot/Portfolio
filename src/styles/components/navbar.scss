@@ -60,7 +60,7 @@
     border: none;
   }
   .navbar {
-    width: 700px;
+    width: 370px !important;
   }
   .navbar-collapse {
     position: absolute;
@@ -78,8 +78,13 @@
   }
   
   .nav-link {
-    padding: 20px 15px; /* Adjust link padding */
+    // padding: 20px 15px; /* Adjust link padding */
     margin-top: 2px;
+    margin-left: 18px;
+  }
+
+  .nav {
+    width: 370px !important;
   }
   
 }
