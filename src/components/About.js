@@ -2,19 +2,21 @@ import { Link } from 'react-router-dom'
 import giphy from '../images/giphy.gif'
 import me from '../images/me.jpg'
 import background2 from '../images/background2.jpg'
+import nba from '../images/nba.jpg'
 import { useEffect, useState } from 'react'
 import ball from '../images/ball.gif'
 import music from '../images/music.gif'
+import wave from '../images/wave.gif'
 
 
 const About = () => {
-  const images = [me, background2]
+  const images = [background2, me]
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex(prevIndex => (prevIndex + 1) % images.length)
-    }, 2000)
+    }, 3500)
     return () => clearInterval(intervalId)
   }, [images.length])
 
@@ -26,12 +28,30 @@ const About = () => {
     })
   }, [])
 
+  const [showImage, setShowImage] = useState(false)
+
+  useEffect(() => {
+    document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('touchstart', function () {
+        window.scrollTo(0, 0)
+      })
+    })
+
+    setTimeout(() => {
+      setShowImage(true)
+    }, 1000)
+  }, [])
+
+  const handleAnimationEnd = () => {
+    document.getElementById('me').classList.add('paused')
+  }
+
   return (
     <main className="about">
-      <img id="sun" src={giphy} className="giphy-img"></img>
+      {/* <img id="sun" src={giphy} className="giphy-img"></img> */}
       <div className="hero">
-        <h1 className='display-3' id="projectTitle">About</h1>
-        <img id="me" src={images[index]}></img>
+        <h1 className='display-3' id="projectTitle">About Me</h1>
+        <img id="me" src={images[index]} onAnimationEnd={handleAnimationEnd}></img>
         <div className='links'>
           <p id="aboutlink"><Link to="https://github.com/tommycroot"> GitHub </Link></p>
           <p id="aboutlink"><a href="mailto:croot.thomas@gmail.com">Email</a></p>
@@ -52,12 +72,13 @@ const About = () => {
         </div>
       </div>
       <br></br>
+      <img id="wave" src={wave} className={`fade-in ${showImage ? 'show' : ''}`}></img>
       <button id="back-to-top" onClick={() => {
         window.scrollTo(0, 0)
         setTimeout(() => {
           window.scrollTo(0, 0)
         }, 100)
-      }}>Back To Top</button>
+      }}>Back to Top</button>
       
     </main>
   )

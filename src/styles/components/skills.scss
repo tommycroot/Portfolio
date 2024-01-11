@@ -1,0 +1,191 @@
+#mongoose-image {
+  width: 35px;
+  filter: hue-rotate(180deg) saturate(0) brightness(0.5); 
+   background-color: transparent;
+  padding-bottom: 15px;
+}
+
+#wave2 {
+  height: 60px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#skillsP {
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-size: 22px;
+  color: black;
+  text-align: left;
+  background: none;
+  z-index: 0;
+}
+
+#skillSpan {
+  font-family: 'Shadows Into Light Two', cursive !important;
+  color: #3c45b4f0;
+  font-size: 28px;
+  background: none;
+  font-weight: 600;
+  z-index: 0;
+}
+
+#ice {
+  height: 180px;
+  width: 130px;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.skillPics {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#skills {
+  width: 900px;
+}
+
+#sub2 {
+  font-size: 20px;
+  color: lightcoral;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-weight: 600;
+  text-align: left;
+  margin: 20px 0px 15px 12px;
+}
+
+
+@media (max-width: 767px) {
+  #skills {
+    width: 320px;
+  }
+
+  #ice {
+    height: 90px;
+    width: 70px;
+  }
+
+  h3 {
+    text-align: center !important;
+  }
+  #sub2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .skillPics {
+    height: 100px;
+    margin-bottom: 35px;
+    justify-content: space-around;
+  }
+
+  #skillsP {
+    text-align: center;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+
+.skills-content-container {
+
+  margin-bottom: 2%;
+  margin-top: 2%;
+  
+
+
+  .skills-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    .h3-col {
+      margin-bottom: 10px;
+
+      h3 {
+          font-size: 30px !important;
+          margin-bottom: 20px;
+          text-align: left;
+
+          font-family: 'Shadows Into Light Two', cursive !important;
+          color: rgba(60, 69, 180, 0.9411764706);
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+    .skills-row-wrapper {
+      text-align: center;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      margin-bottom: 20px;
+      margin: 0 auto;
+
+      div {
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+
+    
+    .skills-scroll-container {
+      overflow-x: auto;
+      margin-bottom: 20px;
+      height: 625px;
+    }
+    
+    .skills-row-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+      /* Adjust the gap between items */
+      overflow-x: auto;
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: #c7c7c7 #daeeff; /* For Firefox */
+      margin: 0 auto;
+    }
+    
+    /* Ensure each item doesn't shrink below its content */
+    .skills-row-wrapper > * {
+      flex: 0 0 auto;
+    }
+    
+    /* Set the style for the scrollbar */
+    .skills-row-wrapper::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+      background-color: #daeeff;
+      /* Set the background color of the scrollbar */
+    }
+    
+    .skills-row-wrapper::-webkit-scrollbar-thumb {
+      background-color: #c7c7c7;
+      border-radius: 10px;
+    }
+    
+    .skills-row-wrapper::-webkit-scrollbar-thumb:hover {
+      background-color: #828282;
+    }
+    
+    /* Remove scrollbar arrows */
+    .skills-row-wrapper::-webkit-scrollbar-thumb {
+      scrollbar-arrow-color: transparent;
+    }}
+  }
+
+  .skills-content-container .skills-row .skills-row-wrapper > * {
+    margin: 0 auto; /* Change margin as needed */
+  }

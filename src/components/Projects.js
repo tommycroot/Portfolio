@@ -38,109 +38,117 @@ const Projects = () => {
 
   return (
     <main className='about'>
-      <img id="sun" src={giphy} className="giphy-img"></img>
+
       <div className="hero">
-        <h1 className='display-3' id="projectTitle">Projects</h1>
-        <img id="wave" src={wave} className={`fade-in ${showImage ? 'show' : ''}`}></img>
+        <div>
+          {/* <img id="sun2" src={giphy} className="giphy-img"></img> */}
+          <h1 className='display-3' id="proTitle">Projects</h1>
+          <p id='sub'>Check out my progress!</p>
+        </div>
         <div className='wrap'>
-          <Container id="projects" md={6} sm={6}>
-            <Row xs={1} md={2}>
-              <Col>
-                <Card >
-                  <Card.Body>
-                    <Card.Title id="cardTitle">Roman Invaders!</Card.Title>
-                    <h6 className="card-subtitle mb-2 text-muted">Independent Project</h6>
-                    <div className='backImg'>
-                      <img id="cardImg" src={asterix}></img>
-                    </div>
-                    <div className='proLinks'>
-                      <p id="aboutlink"><Link to="https://tommycroot.github.io/Asterix/" target="_blank"> App Link</Link></p>
-                      <p id="aboutlink"><Link to="https://github.com/tommycroot/Asterix#readme" target="_blank"> README </Link></p>
-                    </div>
-                    <Card.Text>This was my first project since finishing General Assembly&apos;s Software Engineering course and a great way to sharpen my front-end skills. This is a similar project to Project 1, but involved a higher level of difficulty. Harnessing the power of HTML, CSS and JavaScript I have crafted a classic Space Invaders game with an Asterix theme. Players must navigate through all three levels and face increasingly challenging adversaries.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card >
-                  <Card.Body>
-                    <Card.Title id="cardTitle">Project 4 - Footy Diary</Card.Title>
-                    <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
-                    <div className='backImg'>
-                      <img id="cardImg" src={footy}></img>
-                    </div>
-                    <div className='proLinks'>
-                      <p id="aboutlink"><Link to="https://footydiary.herokuapp.com/" target="_blank"> App Link</Link></p>
-                      <p id="aboutlink"><Link to="https://github.com/tommycroot/project-4#readme" target="_blank"> README </Link></p>
-                    </div>
-                    <Card.Text>For our final project we were individually tasked with creating a full-stack app with CRUD functionality using a Python Django API with Django REST framework that served data from an SQL database and a front-end built with React.js. This project lasted just over a week and I created an app that allowed users to keep track of all football matches that they have attended, as well as who they went with and the details of the match.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Card>
-                  <Card.Body>
-                    <Card.Title id="cardTitle">Project 3 - HAGL</Card.Title>
-                    <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
-                    <div className='backImg'>
-                      <img id="cardImg" src={hagl}></img>
-                    </div>
-                    <div className='proLinks'>
-                      <p id="aboutlink"><Link to="http://haglproject.herokuapp.com/" target="_blank"> App Link</Link></p>
-                      <p id="aboutlink"><Link to="https://github.com/tommycroot/project3#readme" target="_blank"> README </Link></p>
-                    </div>
-                    <Card.Text>This was a week-long challenge to create a full-stack MERN app (MongoDB, Express.js, React.js and Node.js) with CRUD functionality. In a group of three, we built an online marketplace that gives users the ability to swap their used items with each other. We all worked full-stack on this project, but I focused on back-end configurations and took responsibility for the forms on the front-end covering the login and registration pages, as well as the edit page.</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card>
-                  <Card.Body>
-                    <Card.Title>Project 2 - Mom&apos;s Spaghetti</Card.Title>
-                    <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
-                    <div className='backImg'>
-                      <img id="cardImg" src={moms}></img>
-                    </div>
-                    <div className='proLinks'>
-                      <p id="aboutlink"><Link to="https://momsspaghetti.netlify.app/" target="_blank"> App Link</Link></p>
-                      <p id="aboutlink"><Link to="https://github.com/tommycroot/project2#readme" target="_blank"> README </Link></p>
-                    </div>
-                    <Card.Text>This challenge required us to collaborate in pairs for a day and a half to create a React App integrated with an external API. Our project, Mom&apos;s Spagehtti, is a rhyming dictionary app that incorporates two APIs and is styled with a 90&apos;s aesthetic that pays homage to the iconic 8 Mile meme. The widget goes beyond merely offering an index of rhyming words for user queries; it also provides the creative option to generate a random word, catering to users seeking inspiration.</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-            <Row xs={1} md={2}>
-              <Col>
-                <Card>
-                  <Card.Body>
-                    <Card.Title>Project 1 - Frogger</Card.Title>
-                    <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
-                    <div className='backImg'>
-                      <img id="cardImg" src={frogger}></img>
-                    </div>
-                    <div className='proLinks'>
-                      <p id="aboutlink"><Link to="https://tommycroot.github.io/Project-1-Frogger/" target="_blank"> App Link</Link></p>
-                      <p id="aboutlink"><Link to="https://github.com/tommycroot/Project-1-Frogger#readme" target="_blank"> README</Link></p>
-                    </div>
-                    <Card.Text>This is a grid based game built with Vanilla JavaScript, HTML & CSS, based on the arcade game Frogger and styled with a SpongeBob theme. I had a week to complete this project and it was a really fun taste of building something from scratch and a great way to reinforce everything learnt over the first 3 weeks of the course.</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+          <div className='projects-scroll-container'>
+            <Container id="projects" md={6} sm={6}>
+              <Row xs={1} md={2} className='projects-row-wrapper'>
+                <div className="scroll-content">
+                  <Col>
+
+                    <Card >
+                      <Card.Body>
+                        <Card.Title id="cardTitle">Roman Invaders!</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">Independent Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={asterix}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="https://tommycroot.github.io/Asterix/" target="_blank"> App Link</Link></p>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/Asterix#readme" target="_blank"> README </Link></p>
+                        </div>
+                        <Card.Text>This is a grid-based Space Invaders game made using solely HTML, CSS and JavaScript and it served as a fun distraction/side project during the summer to keep my front-end skills sharp whilst I continued development on another full-stack web app. Inspired by the Asterix cartoon, the game challenges players to defend Gaul against those pesky Romans. Added features include cut scenes, three levels to beat and the ability to select different characters.
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col>
+                    <Card >
+                      <Card.Body>
+                        <Card.Title id="cardTitle">Project 4 - Footy Diary</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={footy}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="https://footydiary.herokuapp.com/" target="_blank"> App Link</Link></p>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/project-4#readme" target="_blank"> README </Link></p>
+                        </div>
+                        <Card.Text>Footy Diary is a full-stack web application designed for users to log their attended football matches, note accompanying friends, and record match specific details. The app was developed entirely from scratch, utilising a Python Django API and Django REST Framework to serve information from a PostgreSQL database. This data is seamlessly consumed through a front-end crafted with React.js and SASS.
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+
+                  <Col>
+                    <Card>
+                      <Card.Body>
+                        <Card.Title id="cardTitle">Project 3 - HAGL</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={hagl}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="http://haglproject.herokuapp.com/" target="_blank"> App Link</Link></p>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/project3#readme" target="_blank"> README </Link></p>
+                        </div>
+                        <Card.Text>Created a comprehensive application from the ground up, implementing full-stack capabilities with CRUD functionality, leveraging the MERN stack (MongoDB, Express.js, React.js, and Node.js). In a group of three, we built an online marketplace that gives users the ability to swap their used items with each other. In our team effort on this project, I contributed across the full stack. My main focus was on the back-end configurations, and I took charge of the front-end forms, handling login and registration pages, alongside the edit page.</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col>
+                    <Card>
+                      <Card.Body>
+                        <Card.Title>Project 2 - Mom&apos;s Spaghetti</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={moms}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="https://momsspaghetti.netlify.app/" target="_blank"> App Link</Link></p>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/project2#readme" target="_blank"> README </Link></p>
+                        </div>
+                        <Card.Text>This challenge involved us working in pairs over a day and a half to develop a React App that used an external API. This rhyming dictionary app uses two - it provides an index of rhyming words related to the word the user searches for and it also generates a random word if the user is lacking inspiration. We decided to have fun with our CSS and aesthetic by paying homage to the early days of the internet and the movie 8 Mile.</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col>
+                    <Card>
+                      <Card.Body>
+                        <Card.Title>Project 1 - Frogger</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">General Assembly Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={frogger}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="https://tommycroot.github.io/Project-1-Frogger/" target="_blank"> App Link</Link></p>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/Project-1-Frogger#readme" target="_blank"> README</Link></p>
+                        </div>
+                        <Card.Text>Designed and developed a grid based game with JavaScript, HTML & CSS. I based mine on the arcade game Frogger and styled it with a SpongeBob theme. This was a fun challenge that required a solid understanding of intervals and scope and I learned a lot about implementing objects, functions and methods.</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </div>
+              </Row>
+
+            </Container>
+
+          </div>
         </div>
       </div>
+      <img id="wave" src={wave} className={`fade-in ${showImage ? 'show' : ''}`}></img>
       <button id="back-to-top" onClick={() => {
         window.scrollTo(0, document.body.scrollHeight)
         setTimeout(() => {
           window.scrollTo(0, 0)
         }, 100)
-      }}>Back To Top</button>
+      }}>Back to Top</button>
     </main>
   )
 }

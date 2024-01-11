@@ -16,7 +16,7 @@ const NavBar = () => {
     <Navbar expand="md" className="navbar">
       <Container>
         <Navbar.Toggle aria-controls="porfolio-nav" style={{ zIndex: '9999' }} />
-        <Navbar.Collapse id="portfolio-nav" className="flex-row">
+        <Navbar.Collapse id="portfolio-nav" className="justify-content-end">
           <Nav className="nav ml-auto">
             <Nav.Link to="/" as={NavLink} className="nav-link" activeClassName="active">Home</Nav.Link>
             <Nav.Link to="/projects" as={NavLink} className="nav-link" activeClassName="active">Projects</Nav.Link>

@@ -3,7 +3,7 @@ import home1 from '../images/home1.jpg'
 import home3 from '../images/home3.jpg'
 import home4 from '../images/home4.jpg'
 import home5 from '../images/home5.jpg'
-import home6 from '../images/home6.jpg'
+
 import { useEffect, useState } from 'react'
 import giphy from '../images/giphy.gif'
 
@@ -11,7 +11,7 @@ import giphy from '../images/giphy.gif'
 
 
 const Home = () => {
-  const images = [home5, home1, home2, home3, home4, home6]
+  const images = [home5, home1, home2, home3, home4]
   const [index, setIndex] = useState(0)
   const [showHeader, setShowHeader] = useState(false)
   const [showSubheader, setShowSubheader] = useState(false)
@@ -47,6 +47,7 @@ const Home = () => {
         <p id="homep" className={`fade-in ${showDescription ? 'show' : ''}`}><span id="spanHome">Coding From</span> Sunny Southend !</p>
       </div>
     </main>
+    
   )
 }
 

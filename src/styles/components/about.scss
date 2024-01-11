@@ -1,0 +1,96 @@
+#ball {
+  height: 100px;
+  width: 100px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+#music {
+  height: 85px;
+  width: 85px;
+  margin-bottom: 25px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive !important;
+  color: lightcoral !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.about {
+  @extend %flex-center;
+  flex-direction: column;
+  background-color: #daeeff;
+
+  .about-hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #daeeff;
+    border-radius: 8px;
+  }
+}
+
+#hobbies {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.about {
+  text-align: center;
+  padding: 20px;
+  background-color: #daeeff;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .about {
+    text-align: center;
+    padding: 20px;
+    background-color: #daeeff;
+    border-radius: 8px;
+    // margin-top: 50px;
+  }
+}
+
+#aboutp {
+  font-size: 20px;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-weight: 600;
+  max-width: 900px;
+  text-align: justify;
+  z-index: 1 !important;
+}
+
+
+
+#me {
+  height: 160px;
+  width: 145px;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  opacity: 1;
+  animation: spin 2s linear forwards;
+}
+
+#me.active {
+  opacity: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,515 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two:wght@300;400;700&display=swap');
-
+@import './components/navbar.scss';
+@import './components/projects.scss';
+@import './components/about.scss';
+@import './components/home.scss';
+@import './components/skills.scss';
 body {
   background-color: #daeeff;
 }
+
 * {
   box-sizing: border-box;
   background-color: #daeeff;
 
 }
 
-h1 {
-  font-family: 'Shadows Into Light Two', cursive !important;
-  color: #00c5ff;
-  position: relative;
-  z-index: 9999;
-}
-
-
-#tom{
-  font-weight: 600;
-}
-#junior {
-  color: #3c45b4f0;
-  font-weight: 600;
-}
-
-%flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home {
-  @extend %flex-center;
-  background-color: #daeeff;
-  padding: 0px;
-
-  .hero {
-    text-align: center;
-    background-color: #daeeff;
-    border-radius: 8px;
-  }
-}
-
-#sun {
-  height: 85px;
-  width: 85px;
-  position: relative;
-  z-index: 9999;
-}
-
-#ball{
-  height: 100px;
-  width: 100px;
-  margin-left: 15px;
-  margin-bottom: 25px;
-}
-
-#music{
-  height:85px;
-  width: 85px;
-  margin-bottom: 25px;
-}
-.about {
-  @extend %flex-center;
-  flex-direction: column;
-  background-color: #daeeff;
-
-  .about-hero {
-    text-align: center;
-    padding: 20px;
-    background-color: #daeeff;
-    border-radius: 8px;
-  }
-}
-
-#hobbies {
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 28px;
-  font-family: 'Shadows Into Light Two', cursive;
-  color: #00c5ff;
-  margin-bottom: 20px;
-}
-
-#homep {
-  margin-top: 10px;
-  font-family: 'Shadows Into Light Two', cursive;
-  font-size: 20px;
-  color: #00c5ff;
-  font-weight: 600;
-}
-
-#beach {
-  width: 100%;
-  max-width: 500px;
-  transition: opacity 1s ease-in-out;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-#beach:not(:first-child) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-}
-
-#beach.active {
-  opacity: 1;
-  z-index: 0;
-}
-
-.portfolio-nav {
-  z-index: 9999;
-}
-
-@media (max-width: 767px) {
-  #beach {
-    max-width: 92%;
-    max-width: 400px;
-    max-height: 200px !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero {
-    margin-bottom: 100px;
-  }
-}
-
-.about {
-  text-align: center;
-  padding: 20px;
-  background-color: #daeeff;
-  border-radius: 8px;
-}
-
-@media (max-width: 767px) {
-  .about {
-    text-align: center;
-    padding: 20px;
-    background-color: #daeeff;
-    border-radius: 8px;
-    margin-top: 50px;
-  }
-}
-
-.navbar {
-  height: 60px;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-}
-
-.flex-row {
-  flex-direction: row !important;
-}
-
-.flex-row .nav-link {
-  padding: 0 1rem;
-}
-
-#aboutp {
-  font-size: 22px;
-  color: black;
-  font-family: 'Shadows Into Light Two', cursive !important;
-  font-weight: 500;
-  max-width: 600px;
-  text-align: center;
-  z-index: 1 !important;
-}
-
-.nav {
-  max-width: 1320px;
-  padding: 20px;
-  margin: 0 auto;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100vh !important;
-  font-family: 'Shadows Into Light Two', cursive !important;
-  font-size: 24px;
-  color: #00c5ff !important;
-
-  .nav-item {
-    width: 160px;
-    text-align: right;
-    font-family: 'Shadows Into Light Two', cursive !important;
-    color: #00c5ff;
-
-    .nav-link {
-      color: #898989;
-      font-weight: 600;
-      font-family: 'Shadows Into Light Two', cursive;
-
-      &:hover,
-      &.active {
-        background-color: #9d008d99 !important;
-        color: #000;
-        font-weight: 600;
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .nav {
-    font-size: 18px;
-    color: #00c5ff !important;
-    padding: 0px !important;
-    max-width: 350px;
-    margin-right: 50px;
-  }
-}
-
-.navbar .nav-link {
-  font-family: 'Shadows Into Light Two', cursive !important;
-  color: #db23c7 !important;
-}
-
-
 .site-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: #daeeff;
-
 }
 
-main {
-  flex-grow: 1;
-  padding: 2em 0;
-  background-color: beige;
-}
+// main {
+//   flex-grow: 1;
+//   padding: 2em 0;
+// }
 
-.nav-link.active {
-  background-color: #9d008d99 !important;
-  color: #000 !important;
-  font-weight: 600 !important;
-  border-radius: 15px;
-}
-
-@media (max-width: 767px) {
-  .nav-link.active {
-    background-color: transparent !important;
-    color: #db23c7 !important;
-    font-size: 20px !important;
-  }
-}
-
-
-
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 15px;
-}
-
-.proLinks {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: transparent;
-
-  a {
-    background-color: #cdedf6;
-    padding: 0px;
-  }
-}
-
-a {
-  text-decoration: none;
-  font-family: 'Shadows Into Light', cursive !important;
-  color: lightcoral!important;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-#spanHome {
-  color: #db23c7;
-  font-weight: 600;
-}
-
-.card {
-  border-radius: 20px;
-  background-color: #cdedf6;
-  margin-bottom: 40px;
-  box-shadow:  6px 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 10px 10px 10px 10px;
-}
-
-#cardImg {
-  width: 100%;
-  max-width: 300px;
-  max-height: 160px;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
-.card-body {
-  background-color: #cdedf6;
-  border-radius: 30px;
-}
-
-.card-text {
-  width: 400px;
-  background-color: #cdedf6;
-  font-size: 18px;
-  font-family: 'Shadows Into Light Two', cursive !important;
-  font-weight: 600;
-  color: black;
-}
-
-.backImg {
-  background-color: #cdedf6;
-}
-
-.card-title {
-  background-color: #cdedf6;
-  font-family: 'Shadows Into Light Two', cursive !important;
-  font-size: 30px;
-  font-weight: 600;
-  color: #3c45b4f0;
-  margin-bottom: 15px;
-
-}
-
-.container {
-  margin-bottom: 20px;
-}
-
-#projectTitle {
-  margin-bottom: 10px;
-  margin-top: 15px;
-  color: #00c5ff;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 767px) {
-  #projects {
-    width: 320px;
-    margin-right: 20px;
-  }
-  .card{
-    border:none;
-    width: 320px;
-    margin-bottom: 35px;
-    box-shadow:  6px 10px 0 rgba(0,0,0,.2);
-    padding: 0px 0px 0px 0px;
-  }
-  .card-body {
-    width: 320px;
-   
-  }
-  .card:hover {
-    transform: none;
-  }
-  
-  .card-text {
-    width: 280px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width: 900px) {
-  .card-body {
-    width: 400px;
-  }
-
-  .card-text {
-    width: 380px;
-    padding-right: 10px;
-  }
-
-  .card-image {
-    width: 100%;
-    max-width: 300px;
-  }
-}
 
 #back-to-top {
   border: none;
   font-family: 'Shadows Into Light Two', cursive !important;
   color: #db23c7;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.giphy-img {
-  animation-name: drop-in;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  background: transparent;
-}
-
-@keyframes drop-in {
-  from {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-#skillsP {
+footer {
+  font-size: 10px;
+  text-align: center;
   font-family: 'Shadows Into Light Two', cursive !important;
-  font-size: 22px;
-  color: black;
-  text-align: left;
-  background: none;
-  z-index: 0;
+
 }
 
-#skillSpan {
-  font-family: 'Shadows Into Light Two', cursive !important;
-  color: #3c45b4f0;
-  font-size: 28px;
-  background: none;
-  font-weight: 600;
-  z-index: 0;
-}
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 480px;
-  height: 280px;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 @media (max-width: 767px) {
-  .image-container {
-    padding: 0px;
-    border: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 220px;
-
+footer {
+    padding: 10px;
+    font-size: 8px;
   }
-
-  .image-container img {
-    width: 330px;
-    height: 280px;
-  }
-}
-
-@media (max-width: 767px) {
-  .home {
-    max-height: 700px;
-  }
-}
-
-#me {
-  height: 160px;
-  width: 150px;
-  border-radius: 10px;
-  margin: 20px 0px 15px 0px;
-}
-
-#ice {
-  height: 180px;
-  border-radius: 15px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  opacity: 1;
-  animation: spin 2s linear forwards;
-}
-
-#ice.active {
-  opacity: 1;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-#wave{
-  height: 60px;
-  margin-bottom: 50px;
-}
-
-.card-subtitle {
-  background-color: #cdedf6;
-  font-size: 20px;
-  font-family: 'Shadows Into Light Two', cursive !important;
-  padding-bottom: 20px;
-  color: lightcoral !important;
 }

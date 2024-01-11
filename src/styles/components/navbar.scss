@@ -1,0 +1,114 @@
+
+.navbar {
+  height: 60px;
+}
+
+.flex-row .nav-link {
+  padding: 0 1rem;
+}
+
+.portfolio-nav {
+  z-index: 9999;
+}
+
+
+.nav {
+  max-width: 1320px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vh !important;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  font-size: 24px;
+  color: #00c5ff !important;
+
+  .nav-item {
+    width: 160px;
+    text-align: right;
+    font-family: 'Shadows Into Light Two', cursive !important;
+    color: #00c5ff;
+
+    .nav-link {
+      color: #898989;
+      font-weight: 600;
+      font-family: 'Shadows Into Light Two', cursive;
+
+      &:hover,
+      &.active {
+        background-color: #9d008d99 !important;
+        color: #000;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    font-size: 18px;
+    color: #00c5ff !important;
+    padding: 0px !important;
+    max-width: 350px;
+    margin-right: 63px;
+    flex-direction: row !important;
+    width: auto !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 0px;
+    border: none;
+  }
+  .navbar {
+    width: 700px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    left: 75px; /* Align dropdown content to the right */
+    width: auto; /* Adjust width as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex; /* Display flex for horizontal alignment */
+    flex-direction: row; /* Display links horizontally */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .navbar-collapse .nav {
+    flex-direction: row; /* Display links horizontally */
+  }
+  
+  .nav-link {
+    padding: 20px 15px; /* Adjust link padding */
+    margin-top: 2px;
+  }
+  
+}
+
+
+.navbar .nav-link {
+  font-family: 'Shadows Into Light Two', cursive !important;
+  color: #db23c7 !important;
+  
+}
+
+.nav .nav-item {
+  width: auto;
+  text-align: center;
+}
+
+.nav-link.active {
+  background-color: #9d008d99 !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  .nav-link.active {
+    background-color: transparent !important;
+    color: #db23c7 !important;
+  }
+}
+
+
+
