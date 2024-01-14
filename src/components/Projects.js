@@ -43,7 +43,7 @@ const Projects = () => {
         <div>
           {/* <img id="sun2" src={giphy} className="giphy-img"></img> */}
           <h1 className='display-3' id="proTitle">Projects</h1>
-          <p id='sub'>Check out my progress!</p>
+          {/* <p id='sub'>Check out my progress!</p> */}
         </div>
         <div className='wrap'>
           <div className='projects-scroll-container'>

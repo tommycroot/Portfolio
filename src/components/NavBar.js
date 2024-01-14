@@ -19,9 +19,10 @@ const NavBar = () => {
         <Navbar.Collapse id="portfolio-nav" className="justify-content-end">
           <Nav className="nav ml-auto">
             <Nav.Link to="/" as={NavLink} className="nav-link" activeClassName="active">Home</Nav.Link>
+            <Nav.Link to="skills" as={NavLink} className="nav-li" activeClassName="active">Skills</Nav.Link>
             <Nav.Link to="/projects" as={NavLink} className="nav-link" activeClassName="active">Projects</Nav.Link>
             <Nav.Link to="/about" as={NavLink} className="nav-li" activeClassName="active">About</Nav.Link>
-            <Nav.Link to="skills" as={NavLink} className="nav-li" activeClassName="active">Skills</Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
