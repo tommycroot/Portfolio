@@ -59,7 +59,7 @@ const About = () => {
         </div>
         <div className='aboutText'>
           <p id="aboutp">Hey! Thanks for checking out my portfolio! My name&apos;s Thomas/Tom/Tommy. I&apos;ve been learning to code from Southend in Essex, which is an easy commute into London.</p>
-          <p id="aboutp">As someone driven by creativity and purpose, my enthusiasm for coding stems from the fulfilment of witnessing my creations take shape. I&apos;ve always enjoyed learning new skills and finding creative solutions to intricate puzzles in my writing and music, so soon I found myself transitioning careers as a result of my growing fascination. </p>
+          <p id="aboutp">As someone driven by creativity and purpose, my enthusiasm for coding stems from the fulfilment of witnessing my creations take shape. I&apos;ve always enjoyed learning new skills and finding creative solutions to intricate puzzles in my writing and music, so I soon found myself transitioning careers as a result of my growing fascination. </p>
           <p id="aboutp2">I then enrolled into General Assembly’s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience. Now, I&apos;m a former laboratory technician who is driven, passionate and eager to learn as much about software engineering as possible. I can&apos;t wait to become a member of a collaborative team and infuse my own imaginative code into compelling projects.
           </p>
           <br></br>
