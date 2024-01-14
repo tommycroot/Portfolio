@@ -60,15 +60,17 @@ const About = () => {
         <div className='aboutText'>
           <p id="aboutp">Hey! Thanks for checking out my portfolio! My name&apos;s Thomas, but you can call me Tom or Tommy. I&apos;ve been learning to code from Southend in Essex, which is an easy commute into London.</p>
           <p id="aboutp">I&apos;m somebody who enjoys learning new skills and finding creative solutions to puzzles in writing and music, so I soon found myself in the midst of a career change after getting hooked on coding during the COVID lockdowns. I then enrolled into General Assembly&apos;s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience, as well as network with like minded people also starting out in their coding journeys.</p>
-          <p id="aboutp">Now, I&apos;m a former laboratory technician who is driven, passionate and eager to learn as much about software engineering as possible. I&apos;m most looking forward to becoming a member of a collaborative team and learning how to contribute my own imaginative code to projects.</p>
+          <p id="aboutp2">Now, I&apos;m a former laboratory technician who is driven, passionate and eager to learn as much about software engineering as possible. I&apos;m most looking forward to becoming a member of a collaborative team and learning how to contribute my own imaginative code to projects.</p>
           <br></br>
-          <h2 id="hobbies">Hobbies</h2>
+          <h2 id="hobbies">Music</h2>
           <img id="music" src={music}></img>
-          <img id="ball" src={ball}></img>
           <br></br>
           <br></br>
           <p id="aboutp">I enjoy a huge variety of music and I love to play classical guitar. I particularly enjoy reinterpeting songs into my own arrangements, as well as writing my own original music which is occasionally posted to social media. I love the expression of creativity, the journey of mastering a particular musical phrase, the problem solving it entails and the meditative state my mind is in whilst playing. Some of my favourite artists include The Clash, Nas, A Tribe Called Quest, Metallica, Bob Dylan, Johnny Cash and Frank Sinatra.</p>
+          <h2 id="hobbies2">Sport</h2>
+          <img id="ball" src={ball}></img>
           <p id="aboutp">I spent much of my life playing sports and I still enjoy working out and being active. Running is something I particularly enjoy because it helps clear my mind and provides me with ample time to reflect. Some of my favourite sports include football, basketball and skateboarding. Although <strong>&quot;technically&quot;</strong> not a sport, I&apos;m also a lifelong wrestling fan.</p>
+
         </div>
       </div>
       <br></br>
