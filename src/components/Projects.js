@@ -63,7 +63,7 @@ const Projects = () => {
                           <p id="aboutlink"><Link to="https://github.com/tommycroot/" target="_blank"> App Link</Link></p>
                           <p id="aboutlink"><Link to="https://github.com/tommycroot/" target="_blank"> README </Link></p>
                         </div>
-                        <Card.Text>Coming soon! Introducing Encore, an all-encompassing application designed as a comprehensive gig database. With Encore, users can record and manage details of the gigs they&apos;ve experienced, including set lists. The platform allows users to connect with one another, enabling them to view each other&apos;s attended gigs and upcoming events. Leveraging a Python Django API and Django REST Framework, Encore retrieves information from a PostgreSQL database and presents it through a user-friendly front-end built with React.js and SASS. Stay tuned!
+                        <Card.Text>Coming soon! Encore is an all-encompassing application designed as a comprehensive gig database. With Encore, users can record and manage details of the gigs they&apos;ve experienced. The platform allows users to connect with one another, enabling them to view each other&apos;s attended gigs and upcoming events. Using a Python Django API and Django REST Framework, Encore retrieves information from a PostgreSQL database and presents it through a user-friendly front-end built with React.js and SASS.
                         </Card.Text>
                       </Card.Body>
                     </Card>
