@@ -76,6 +76,7 @@ a {
   text-align: justify;
   z-index: 1 !important;
   color: rgba(60, 69, 180, 0.9411764706);
+  margin-bottom: 20px;
 }
 
 #aboutp2 {
@@ -113,4 +114,9 @@ a {
   to {
     transform: rotate(360deg);
   }
+}
+
+#aboutp strong {
+  font-weight: bold;
+  color: lightcoral;
 }

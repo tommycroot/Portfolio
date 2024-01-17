@@ -16,7 +16,7 @@
   max-width: 1320px;
   padding: 20px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   width: 100vh !important;
@@ -54,16 +54,17 @@
     // margin-right: 63px;
     flex-direction: row !important;
     // width: auto !important;
-    width: 270px !important;
+    max-width: 300px !important;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin-top: 0px;
     border: none;
+    justify-content: space-evenly ;
   }
 
   .navbar-collapse {
     position: absolute;
-    left: 75px; /* Align dropdown content to the right */
+    left: 65px; /* Align dropdown content to the right */
     width: auto; /* Adjust width as needed */
     z-index: 1000; /* Ensure it's above other content */
     display: flex; /* Display flex for horizontal alignment */
@@ -81,6 +82,15 @@
     margin-top: 2px;
     margin-left: 18px;
   }
+
+  .nav-item {
+    font-weight: 600;
+  }
+
+  .navbar .nav-link {
+    font-weight: 500 !important;
+    
+  }
   
 }
 
@@ -88,6 +98,7 @@
 .navbar .nav-link {
   font-family: 'Shadows Into Light Two', cursive !important;
   color: #db23c7 !important;
+  font-weight: 700;
   
 }
 

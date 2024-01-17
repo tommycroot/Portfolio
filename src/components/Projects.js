@@ -15,6 +15,7 @@ import moms from '../images/moms.gif'
 import frogger from '../images/frogger.gif'
 import footy from '../images/footy.gif'
 import asterix from '../images/asterix.gif'
+import encore from '../images/encore.png'
 
 import wave from '../images/wave.gif'
 
@@ -51,7 +52,23 @@ const Projects = () => {
               <Row xs={1} md={2} className='projects-row-wrapper'>
                 <div className="scroll-content">
                   <Col>
-
+                    <Card >
+                      <Card.Body>
+                        <Card.Title id="cardTitle">Encore</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">Independent Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={encore}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/" target="_blank"> App Link</Link></p>
+                          <p id="aboutlink"><Link to="https://github.com/tommycroot/" target="_blank"> README </Link></p>
+                        </div>
+                        <Card.Text>Coming soon! Introducing Encore, an all-encompassing application designed as a comprehensive gig database. With Encore, users can record and manage details of the gigs they&apos;ve experienced, including set lists. The platform allows users to connect with one another, enabling them to view each other&apos;s attended gigs and upcoming events. Leveraging a Python Django API and Django REST Framework, Encore retrieves information from a PostgreSQL database and presents it through a user-friendly front-end built with React.js and SASS. Stay tuned!
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col>
                     <Card >
                       <Card.Body>
                         <Card.Title id="cardTitle">Roman Invaders!</Card.Title>
@@ -63,7 +80,7 @@ const Projects = () => {
                           <p id="aboutlink"><Link to="https://tommycroot.github.io/Asterix/" target="_blank"> App Link</Link></p>
                           <p id="aboutlink"><Link to="https://github.com/tommycroot/Asterix#readme" target="_blank"> README </Link></p>
                         </div>
-                        <Card.Text>This is a grid-based Space Invaders game made using solely HTML, CSS and JavaScript and it served as a fun distraction/side project during the summer to keep my front-end skills sharp whilst I continued development on another full-stack web app. Inspired by the Asterix cartoon, the game challenges players to defend Gaul against those pesky Romans. Added features include cut scenes, three levels to beat and the ability to select different characters.
+                        <Card.Text>This is a grid-based Space Invaders game made using solely HTML, CSS and JavaScript and it served as a fun distraction/side project during the summer to keep my front-end skills sharp whilst I continued development on another full-stack web app. Inspired by the Asterix cartoon, the game challenges players to defend Gaul against pesky Romans. Added features include cut scenes, three levels to beat and the ability to select different characters.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -98,7 +115,7 @@ const Projects = () => {
                           <p id="aboutlink"><Link to="http://haglproject.herokuapp.com/" target="_blank"> App Link</Link></p>
                           <p id="aboutlink"><Link to="https://github.com/tommycroot/project3#readme" target="_blank"> README </Link></p>
                         </div>
-                        <Card.Text>Created a comprehensive application from the ground up, implementing full-stack capabilities with CRUD functionality, leveraging the MERN stack (MongoDB, Express.js, React.js, and Node.js). In a group of three, we built an online marketplace that gives users the ability to swap their used items with each other. In our team effort on this project, I contributed across the full stack. My main focus was on the back-end configurations, and I took charge of the front-end forms, handling login and registration pages, alongside the edit page.</Card.Text>
+                        <Card.Text>In a group of three, we built an online marketplace that gives users the ability to message and swap their used items with each other. This is a comprehensive application built from the ground up, implementing full-stack capabilities with CRUD functionality and leveraging the MERN stack (MongoDB, Express.js, React.js, and Node.js). My main focus was on the back-end configurations, and I took charge of the front-end forms, handling login and registration pages, alongside the edit page.</Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>

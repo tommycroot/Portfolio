@@ -67,7 +67,9 @@ const About = () => {
           <img id="music" src={music}></img>
           <br></br>
           <br></br>
-          <p id="aboutp">Some of my favourite artists include The Doors, The Clash, Nas, A Tribe Called Quest, Metallica, Bob Dylan, Johnny Cash and Frank Sinatra. I enjoy a huge variety of music and I love to play classical guitar. I particularly enjoy reinterpeting songs into my own arrangements, as well as writing my own original music and occasionally posting it to social media. I love the expression of creativity, the journey of mastering a particular musical phrase, the problem solving it entails and the meditative state my mind is in whilst playing.</p>
+          <p id="aboutp">Some of my favourite artists include The Doors, The Clash, Nas, A Tribe Called Quest, Metallica, Bob Dylan, Johnny Cash and Frank Sinatra.   </p>
+          <p id="aboutp">I enjoy a huge variety of music and I love to play classical guitar. I particularly enjoy reinterpeting songs into my own arrangements, as well as writing my own original music and occasionally posting it to social media.</p>
+          <p id="aboutp">I love the expression of creativity, the journey of mastering a particular musical phrase, the problem solving it entails and the meditative state my mind is in whilst playing.</p>
           <h2 id="hobbies2">Sport</h2>
           <img id="ball" src={ball}></img>
           <p id="aboutp">I&apos;ve spent much of my life playing sports and I still enjoy working out and being active. Running is something I particularly enjoy because it helps clear my mind and provides me with ample time to reflect. Some of my favourite sports include football, basketball and skateboarding. Although <strong>&quot;technically&quot;</strong> not a sport, I&apos;m also a lifelong wrestling fan.</p>
