@@ -71,23 +71,22 @@ a {
 #aboutp {
   font-size: 20px;
   font-family: 'Shadows Into Light Two', cursive !important;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 900px;
   text-align: justify;
   z-index: 1 !important;
-  color: rgba(60, 69, 180, 0.9411764706);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #aboutp2 {
   font-size: 20px;
   font-family: 'Shadows Into Light Two', cursive !important;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 900px;
   text-align: justify;
   z-index: 1 !important;
-  color: rgba(60, 69, 180, 0.9411764706);
-  margin-bottom: 0px;
+  
+  margin-bottom: 10px;
 }
 
 
@@ -118,5 +117,5 @@ a {
 
 #aboutp strong {
   font-weight: bold;
-  color: lightcoral;
+  color: rgba(60, 69, 180, 0.9411764706);
 }

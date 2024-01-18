@@ -11,7 +11,7 @@ import giphy from '../images/giphy.gif'
 
 
 const Home = () => {
-  const images = [home5, home1, home2, home3, home4]
+  const images = [home1, home4, home2, home3, home5]
   const [index, setIndex] = useState(0)
   const [showHeader, setShowHeader] = useState(false)
   const [showSubheader, setShowSubheader] = useState(false)
