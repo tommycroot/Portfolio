@@ -2,9 +2,11 @@
 import background1 from '../images/background1.jpg'
 import dino from '../images/dino.jpg'
 import ice3 from '../images/ice3.jpg'
+import light from '../images/light.jpg'
+
 import { useEffect, useState } from 'react'
 import { DiBootstrap, DiCss3, DiDjango, DiGithubBadge, DiHtml5, DiJsBadge, DiMongodb, DiNodejsSmall, DiNpm, DiPostgresql, DiPython, DiReact, DiSass, DiTrello } from 'react-icons/di'
-import { SiExpress, SiInsomnia, SiTypescript } from 'react-icons/si'
+import { SiExpress, SiNestjs, SiTypescript } from 'react-icons/si'
 import { GrCircleAlert } from 'react-icons/gr'
 import { RiTeamLine } from 'react-icons/ri'
 import { AiOutlineComment } from 'react-icons/ai'
@@ -25,6 +27,7 @@ const Skills = () => {
   const [showImage, setShowImage] = useState(false)
   const [showImage2, setShowImage2] = useState(false)
   const [showImage3, setShowImage3] = useState(false)
+  const [showImage4, setShowImage4] = useState(false)
 
   useEffect(() => {
     const timer1 = setTimeout(() => {
@@ -39,11 +42,16 @@ const Skills = () => {
       setShowImage3(true)
     }, 3500)
 
+    const timer4 = setTimeout(() => {
+      setShowImage4(true)
+    }, 5000)
+
     // Clear the timers to avoid memory leaks
     return () => {
       clearTimeout(timer1)
       clearTimeout(timer2)
       clearTimeout(timer3)
+      clearTimeout(timer4)
     }
   }, [])
 
@@ -68,6 +76,7 @@ const Skills = () => {
           <img id="ice" src={dino} className={`fade-in ${showImage ? 'show' : ''}`}></img>
           <img id="ice" src={background1} className={`fade-in ${showImage2 ? 'show' : ''}`} ></img>
           <img id="ice" src={ice3} className={`fade-in ${showImage3 ? 'show' : ''}`}></img>
+          <img id="ice" src={light} className={`fade-in ${showImage4 ? 'show' : ''}`}></img>
         </div>
         <p id='sub2'>Key languages and frameworks that I have been using:</p>
         <Container className='skills-content-container'>
@@ -218,9 +227,11 @@ const Skills = () => {
               </Col>
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
-                <SiTailwindcss size='50px'></SiTailwindcss>
-                <p>Tailwind</p>
+                <SiNestjs size='50px'></SiNestjs>
+                <p>NestJS</p>
               </Col>
+
+              
 
             </Row>
 

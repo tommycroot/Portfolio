@@ -15,7 +15,7 @@ import moms from '../images/moms.gif'
 import frogger from '../images/frogger.gif'
 import footy from '../images/footy.gif'
 import asterix from '../images/asterix.gif'
-import encore from '../images/encore.png'
+import encore1 from '../images/encore1.gif'
 
 import wave from '../images/wave.gif'
 
@@ -57,13 +57,20 @@ const Projects = () => {
                         <Card.Title id="cardTitle">Encore</Card.Title>
                         <h6 className="card-subtitle mb-2 text-muted">Independent Project</h6>
                         <div className='backImg'>
-                          <img id="cardImg" src={encore}></img>
+                          <img id="cardImg" src={encore1}></img>
                         </div>
                         <div className='proLinks'>
-                          <p id="aboutlink"><Link to="https://github.com/tommycroot/" target="_blank"> App Link</Link></p>
-                          <p id="aboutlink"><Link to="https://github.com/tommycroot/" target="_blank"> README </Link></p>
+                          <p id="aboutlink"><Link to="https://encore-app.com/" target="_blank"> App Link</Link></p>
                         </div>
-                        <Card.Text>Coming soon! Encore is an all-encompassing application designed as a comprehensive gig database. With Encore, users can record and manage details of the gigs they&apos;ve experienced. The platform allows users to connect with one another, enabling them to view each other&apos;s attended gigs and upcoming events. Using a Python Django API and Django REST Framework, Encore retrieves information from a PostgreSQL database and presents it through a user-friendly front-end built with React.js and SASS.
+                        <Card.Text>Developed a comprehensive gig database application utilising a Python Django
+                          API and Django REST Framework to handle data stored in a PostgreSQL
+                          database. The frontend, built with React.js and Bootstrap, consumes this data.
+                          Encore is a social media hub intended for users to share attended gigs and
+                          upcoming events. Users can engage in community interaction by commenting on
+                          each other&apos;s gig pages and use the follower system to stay updated on their friends&apos;
+                          gig activities. Also included are seamless API integrations with Last.fm for artist
+                          suggestions and Google Places for venue suggestions. Click <Link id='video' to="https://www.linkedin.com/feed/update/urn:li:activity:7171092193913356290/" target="_blank">here</Link> for a video
+                          demonstration and to learn more.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -78,7 +85,6 @@ const Projects = () => {
                         </div>
                         <div className='proLinks'>
                           <p id="aboutlink"><Link to="https://tommycroot.github.io/Asterix/" target="_blank"> App Link</Link></p>
-                          <p id="aboutlink"><Link to="https://github.com/tommycroot/Asterix#readme" target="_blank"> README </Link></p>
                         </div>
                         <Card.Text>This is a grid-based Space Invaders game made using solely HTML, CSS and JavaScript and it served as a fun distraction/side project during the summer to keep my front-end skills sharp whilst I continued development on another full-stack web app. Inspired by the Asterix cartoon, the game challenges players to defend Gaul against pesky Romans. Added features include cut scenes, three levels to beat and the ability to select different characters.
                         </Card.Text>

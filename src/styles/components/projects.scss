@@ -4,14 +4,14 @@
   background-color: transparent;
 
   a {
-    background-color: #cdedf6;
+    background-color: #86d7ec;
     padding: 0px;
   }
 }
 .card {
   border-radius: 20px;
   border: none;
-  background-color: #cdedf6;
+  background-color: #86d7ec;
   margin-bottom: 40px;
   box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.3);
   padding: 10px 10px 10px 10px;
@@ -35,7 +35,7 @@
 
 
 .card-body {
-  background-color: #cdedf6;
+  background-color: #86d7ec;
   border-radius: 30px;
   width: 386px !important;
   height: 5%;
@@ -43,7 +43,7 @@
 
 .card-text {
   width: 355px !important;
-  background-color: #cdedf6;
+  background-color: #86d7ec;
   font-size: 14px;
   font-family: 'Shadows Into Light Two', cursive !important;
   font-weight: 600;
@@ -52,11 +52,11 @@
 }
 
 .backImg {
-  background-color: #cdedf6;
+  background-color: #86d7ec;
 }
 
 .card-title {
-  background-color: #cdedf6;
+  background-color: #86d7ec;
   font-family: 'Shadows Into Light Two', cursive !important;
   font-size: 30px;
   font-weight: 600;
@@ -77,6 +77,8 @@
 #projects {
   margin-top: 15px;
 }
+
+
 
 @media (min-width: 900px) {
   .card-body {
@@ -143,10 +145,17 @@
     width: 280px !important;
     // padding-right: 10px;
   }
+
+  .projects-scroll-container {
+    
+    overflow-y: unset !important;
+    height: 700px !important;
+  
+  }
 }
 
 .card-subtitle {
-  background-color: #cdedf6;
+  background-color: #86d7ec;
   font-size: 20px;
   font-family: 'Shadows Into Light Two', cursive !important;
   padding-bottom: 20px;
@@ -158,9 +167,12 @@
   overflow-x: auto;
   overflow-y: auto;
   margin-bottom: 40px;
-  height: 625px;
+  height: 660px;
 }
 
+.projects-scroll-container .card:last-child {
+  margin-right: 10px; /* Adjust the right margin of the last card */
+}
 .projects-row-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -213,5 +225,14 @@
   
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+#video {
+  text-decoration: none;
+  font-family: "Shadows Into Light", cursive !important;
+  color: lightcoral !important;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #86d7ec;
 }
 
