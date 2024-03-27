@@ -9,6 +9,7 @@ import Skills from './components/Skills'
 const App = () => {
   return (
     <div className='site-wrapper'>
+
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -16,7 +17,7 @@ const App = () => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          
+
         </Routes>
       </BrowserRouter>
     </div>

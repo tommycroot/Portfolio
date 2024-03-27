@@ -62,13 +62,13 @@ const Projects = () => {
                         <div className='proLinks'>
                           <p id="aboutlink"><Link to="https://encore-app.com/" target="_blank"> App Link</Link></p>
                         </div>
-                        <Card.Text>Developed a comprehensive gig database application utilising a Python Django
+                        <Card.Text>A gig database application utilising a Python Django
                           API and Django REST Framework to handle data stored in a PostgreSQL
                           database. The frontend, built with React.js and Bootstrap, consumes this data.
                           Encore is a social media hub intended for users to share attended gigs and
                           upcoming events. Users can engage in community interaction by commenting on
                           each other&apos;s gig pages and use the follower system to stay updated on their friends&apos;
-                          gig activities. Also included are seamless API integrations with Last.fm for artist
+                          gig activities. Includes API integrations with Last.fm for artist
                           suggestions and Google Places for venue suggestions. Click <Link id='video' to="https://www.linkedin.com/feed/update/urn:li:activity:7171092193913356290/" target="_blank">here</Link> for a video
                           demonstration and to learn more.
                         </Card.Text>
