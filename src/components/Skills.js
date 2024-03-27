@@ -5,7 +5,7 @@ import ice3 from '../images/ice3.jpg'
 import light from '../images/light.jpg'
 
 import { useEffect, useState } from 'react'
-import { DiBootstrap, DiCss3, DiDjango, DiGithubBadge, DiHtml5, DiJsBadge, DiMongodb, DiNodejsSmall, DiNpm, DiPostgresql, DiPython, DiReact, DiSass, DiTrello } from 'react-icons/di'
+import { DiBootstrap, DiCss3, DiDjango, DiAws, DiGithubBadge, DiHtml5, DiJsBadge, DiMongodb, DiNodejsSmall, DiNpm, DiPostgresql, DiPython, DiReact, DiSass, DiTrello, DiMysql, DiDocker } from 'react-icons/di'
 import { SiExpress, SiNestjs, SiTypescript } from 'react-icons/si'
 import { GrCircleAlert } from 'react-icons/gr'
 import { RiTeamLine } from 'react-icons/ri'
@@ -127,6 +127,16 @@ const Skills = () => {
             </Col>
 
             <Row className='skills-row-wrapper'>
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <SiTypescript size='50px'></SiTypescript>
+                <p>TypeScript</p>
+              </Col>
+
+
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <SiNestjs size='50px'></SiNestjs>
+                <p>NestJS</p>
+              </Col>
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
                 <DiPython size='50px'></DiPython>
@@ -136,6 +146,27 @@ const Skills = () => {
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
                 <DiDjango size='50px'></DiDjango>
                 <p>Django</p>
+              </Col>
+
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <DiNodejsSmall size='50px'></DiNodejsSmall>
+                <p>Node.js</p>
+              </Col>
+
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <SiMongoose size='50px'></SiMongoose>
+                <p>Mongoose</p>
+              </Col>
+
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <SiExpress size='50px'></SiExpress>
+                <p>Express.js</p>
+              </Col>
+
+
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <DiMysql size='50px'></DiMysql>
+                <p>MySQL</p>
               </Col>
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
@@ -149,19 +180,14 @@ const Skills = () => {
               </Col>
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
-                <SiMongoose size='50px'></SiMongoose>
-                <p>Mongoose</p>
+                <DiDocker size='50px'></DiDocker>
+                <p>Docker</p>
               </Col>
 
-              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
-                <SiExpress size='50px'></SiExpress>
-                <p>Express.js</p>
-              </Col>
+              
 
-              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
-                <DiNodejsSmall size='50px'></DiNodejsSmall>
-                <p>Node.js</p>
-              </Col>
+              
+              
 
             </Row>
 
@@ -216,10 +242,7 @@ const Skills = () => {
 
             <Row className='skills-row-wrapper'>
 
-              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
-                <SiTypescript size='50px'></SiTypescript>
-                <p>TypeScript</p>
-              </Col>
+
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
                 <SiNextdotjs size='50px'></SiNextdotjs>
@@ -227,11 +250,12 @@ const Skills = () => {
               </Col>
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
-                <SiNestjs size='50px'></SiNestjs>
-                <p>NestJS</p>
+                <DiAws size='50px'></DiAws>
+                <p>AWS</p>
               </Col>
 
-              
+
+
 
             </Row>
 
