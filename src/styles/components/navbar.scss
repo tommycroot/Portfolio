@@ -112,13 +112,14 @@
   color: #000 !important;
   font-weight: 600 !important;
   border-radius: 15px;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, .2)
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, .2);
 }
 
 @media (max-width: 767px) {
   .nav-link.active {
     background-color: transparent !important;
     color: #db23c7 !important;
+    box-shadow: none !important;
   }
 }
 
