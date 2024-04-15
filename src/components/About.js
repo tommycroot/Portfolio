@@ -58,20 +58,11 @@ const About = () => {
           <p id="aboutlink"><Link to="https://github.com/tommycroot"> LinkedIn </Link></p>
         </div>
         <div className='aboutText'>
-          <p id="aboutp">Hey! Thanks for checking out my portfolio! My name&apos;s Thomas/Tom/Tommy. I&apos;ve been learning to code from Southend in Essex, which is an easy commute into London.</p>
-          <p id="aboutp">As someone driven by creativity and purpose, my enthusiasm for coding stems from the fulfilment of witnessing my creations take shape. I&apos;ve always enjoyed learning new skills and finding creative solutions to intricate puzzles in my writing and music, so I soon found myself transitioning careers as a result of my growing fascination. </p>
-          <p id="aboutp2">I then enrolled into General Assembly’s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience. Now, I&apos;m a former laboratory technician who is driven, passionate and eager to learn as much about software engineering as possible. I can&apos;t wait to become a member of a collaborative team and infuse my own imaginative code into compelling projects.
+          <p id="aboutp">Hey! Thanks for checking out my portfolio! I&apos;ve been learning to code from Southend in Essex, which is an easy commute into London. I&apos;m a former laboratory technician who is driven, passionate and eager to learn as much about software engineering as possible. As someone driven by creativity and purpose, my enthusiasm for coding stems from the fulfilment of witnessing my creations take shape. I&apos;ve always enjoyed learning new skills and finding creative solutions to intricate puzzles in my writing and music, so I soon found myself transitioning careers as a result of my growing fascination. I then enrolled into General Assembly’s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience. 
           </p>
-          <br></br>
-          <h2 id="hobbies">Music</h2>
-          <img id="music" src={music}></img>
-          <br></br>
-          <br></br>
-          <p id="aboutp">Some of my favourite artists include The Doors, The Clash, Nas, A Tribe Called Quest, Metallica, Bob Dylan, Johnny Cash and Frank Sinatra.   </p>
-          <p id="aboutp">I enjoy a huge variety of music and I love to play classical guitar. I particularly enjoy reinterpeting songs into my own arrangements, as well as writing my own original music and occasionally posting it to social media.</p>
-          <p id="aboutp">I love the expression of creativity, the journey of mastering a particular musical phrase, the problem solving it entails and the meditative state my mind is in whilst playing.</p>
-          <h2 id="hobbies2">Sport</h2>
-          <img id="ball" src={ball}></img>
+          <h2 id="hobbies">Music   <img id="music" src={music}></img></h2>
+          <p id="aboutp">Some of my favourite artists include The Doors, The Clash, Nas, A Tribe Called Quest, Metallica, Bob Dylan, Johnny Cash and Frank Sinatra. I enjoy a huge variety of music and I love to play classical guitar. I particularly enjoy reinterpeting songs into my own arrangements, as well as writing my own original music and occasionally posting it to social media. I love the expression of creativity, the journey of mastering a particular musical phrase, the problem solving it entails and the meditative state my mind is in whilst playing.</p>
+          <h2 id="hobbies2">Sport<img id="ball" src={ball}></img></h2>
           <p id="aboutp">I&apos;ve spent much of my life playing sports and I still enjoy working out and being active. Running is something I particularly enjoy because it helps clear my mind and provides me with ample time to reflect. Some of my favourite sports include football, basketball and skateboarding. Although <strong>&quot;technically&quot;</strong> not a sport, I&apos;m also a lifelong wrestling fan.</p>
 
         </div>
