@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/fluffy-cake-95309');
+
 .proLinks {
   display: flex;
   justify-content: space-evenly;
@@ -44,6 +46,8 @@
 }
 
 .card-text {
+
+  font-family: 'Fluffy Cake', sans-serif;
   width: 355px !important;
   background-color: #86d7ec;
   font-size: 14px;
@@ -63,13 +67,14 @@
   font-weight: 600;
   color: #3c45b4f0;
   margin-bottom: 15px;
-
 }
+
+
 
 #projectTitle {
   margin-bottom: 10px;
   margin-top: 25px;
-  color: #00c5ff;
+  color: #3c45b4f0;
   font-size: 50px;
   font-weight: 600;
 }
@@ -108,25 +113,27 @@
 
 
 #proTitle {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   margin-top: 25px;
-  color: #00c5ff;
+  color: #3c45b4f0;
   font-size: 50px;
   font-weight: 600;
 }
 
 @media (max-width: 767px) {
+
+
   #projects {
     width: 320px;
     margin-right: 20px;
   }
 
-  #projectTitle {
-    margin-top: 0px;
+  #proTitle {
+    margin-top: 20px !important;
   }
 
   #proTitle {
-    margin-top: 0px;
+    margin-bottom: 10px !important;
   }
 
   .card {
@@ -150,9 +157,31 @@
   .projects-scroll-container {
     
     overflow-y: unset !important;
-    height: 720px !important;
+    height: 650px !important;
     width: 340px !important;
+    background-color: #b9d6f0 !important;
+    border: none !important;
   
+  }
+
+  .scroll-content {
+    background-color: #b9d6f0 !important;
+  }
+
+  .col {
+    background-color: #b9d6f0!important;
+  }
+
+  .projects-scroll-container .card:first-child {
+    margin-left: 0px !important; 
+  }
+
+  .projects-row-wrapper {
+    background-color: #b9d6f0 !important;
+  }
+
+  .wrap {
+    background-color: #b9d6f0 !important;
   }
 }
 
@@ -169,23 +198,36 @@
   overflow-x: auto;
   overflow-y: auto;
   margin-bottom: 40px;
-  height: 700px;
-  width: 900px;
+  height: 640px;
+  width: 945px;
+  background-color: #f6eb85;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+.col {
+  background-color: #f6eb85;
+  margin-top: 10px;
 }
 
 .projects-scroll-container .card:last-child {
-  margin-right: 10px; /* Adjust the right margin of the last card */
+  margin-right: 10px; 
+}
+.projects-scroll-container .card:first-child {
+  margin-left: 10px; 
 }
 .projects-row-wrapper {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  background-color: #f6eb85;
 }
 
 .scroll-content {
   display: flex;
   flex-wrap: nowrap;
-  gap: 30px;
+  gap: 40px;
+  background-color: #f6eb85;
 }
 
 
@@ -205,14 +247,13 @@
 .projects-scroll-container::-webkit-scrollbar {
   width: 10px;
   height: 10px;
+  
 }
 
 
 .projects-scroll-container::-webkit-scrollbar-thumb {
   background-color: #c7c7c7;
-  /* Set the color of the scrollbar thumb */
   border-radius: 10px;
-  /* Adjust the border radius of the scrollbar thumb */
 }
 
 .projects-scroll-container::-webkit-scrollbar-thumb:hover {

@@ -6,10 +6,11 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import hagl from '../images/hagl.gif'
 import moms from '../images/moms.gif'
+import nambr from '../images/nambr.gif'
 import frogger from '../images/frogger.gif'
 import footy from '../images/footy.gif'
 import asterix from '../images/asterix.gif'
-import encore1 from '../images/encore1.gif'
+import encore from '../images/encore.gif'
 
 import wave from '../images/wave.gif'
 
@@ -45,24 +46,39 @@ const Projects = () => {
             <Container id="projects" md={6} sm={6}>
               <Row xs={1} md={2} className='projects-row-wrapper'>
                 <div className="scroll-content">
-                  <Col>
+                  <Col className='col'>
+                    <Card >
+                      <Card.Body>
+                        <Card.Title id="cardTitle">Nambr Capital</Card.Title>
+                        <h6 className="card-subtitle mb-2 text-muted">Freelance Project</h6>
+                        <div className='backImg'>
+                          <img id="cardImg" src={nambr}></img>
+                        </div>
+                        <div className='proLinks'>
+                          <p id="aboutlink"><Link to="https://nambrcapital.com/" target="_blank"> App Link</Link></p>
+                        </div>
+                        <Card.Text>Designed and developed a professional website for a close friend&apos;s financial advisory business. I consulted with the client to understand their desired features and what information to include, and was given creative freedom to develop my own vision. This React site was built using TypeScript, a new language I&apos;ve been eager to try out after learning it by developing projects through online courses. I also experimented with KeyFrames for interactive CSS animations, pushing myself creatively on the design side.
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col className='col'>
                     <Card >
                       <Card.Body>
                         <Card.Title id="cardTitle">Encore</Card.Title>
                         <h6 className="card-subtitle mb-2 text-muted">Independent Project</h6>
                         <div className='backImg'>
-                          <img id="cardImg" src={encore1}></img>
+                          <img id="cardImg" src={encore}></img>
                         </div>
                         <div className='proLinks'>
                           <p id="aboutlink"><Link to="https://encore-app.com/" target="_blank"> App Link</Link></p>
                         </div>
-                        <Card.Text>A gig database application utilising a Python Django
-                          API and Django REST Framework to handle data stored in a PostgreSQL
-                          database. The frontend, built with React.js and Bootstrap, consumes this data.
-                          Encore is a social media hub intended for users to share attended gigs and
+                        <Card.Text>A gig database app utilising a Python Django
+                          API and Django REST Framework to handle a PostgreSQL
+                          database. The frontend was built with React.js and Bootstrap.
+                          A social media hub intended for users to share attended gigs and
                           upcoming events. Users can engage in community interaction by commenting on
-                          each other&apos;s gig pages and use the follower system to stay updated on their friends&apos;
-                          gig activities. Includes API integrations with Last.fm for artist
+                          each other&apos;s gig pages and use the follower system to stay updated. Includes API integrations with Last.fm for artist
                           suggestions and Google Places for venue suggestions. Click <Link id='video' to="https://www.linkedin.com/feed/update/urn:li:activity:7171092193913356290/" target="_blank">here</Link> for a video
                           demonstration and to learn more.
                         </Card.Text>
@@ -160,7 +176,7 @@ const Projects = () => {
         </div>
       </div>
       <img id="wave" src={wave} className={`fade-in ${showImage ? 'show' : ''}`}></img>
-      <button id="back-to-top" onClick={() => {
+      <button id="back-to-top" className={`fade-in ${showImage ? 'show' : ''}`}onClick={() => {
         window.scrollTo(0, document.body.scrollHeight)
         setTimeout(() => {
           window.scrollTo(0, 0)

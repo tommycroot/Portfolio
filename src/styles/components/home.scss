@@ -1,13 +1,13 @@
 
 h1 {
   font-family: 'Shadows Into Light Two', cursive !important;
-  color: #00c5ff;
+  color: #3c45b4f0;
   position: relative;
   z-index: 9999;
 }
 
 #junior {
-  color: #3c45b4f0;
+  color: lightcoral;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -20,12 +20,12 @@ h1 {
 
 .home {
   @extend %flex-center;
-  background-color: #daeeff;
+  background-color: #b9d6f0;
   padding: 0px;
 
   .hero {
     text-align: center;
-    background-color: #daeeff;
+    background-color: #b9d6f0;
     border-radius: 8px;
   }
 }
@@ -50,7 +50,7 @@ h2 {
   margin-top: 10px;
   font-family: 'Shadows Into Light Two', cursive;
   font-size: 20px;
-  color: #00c5ff;
+  color: lightcoral;
   font-weight: 600;
 }
 
@@ -103,10 +103,6 @@ h2 {
   flex-direction: row !important;
 }
 
-#spanHome {
-  color: #db23c7;
-  font-weight: 600;
-}
 
 #tom {
   padding: 0px;
@@ -117,7 +113,7 @@ h2 {
 
 
 #spanHome {
-  color: #db23c7;
+  color: #3c45b4f0;
   font-weight: 600;
 }
 
@@ -173,8 +169,8 @@ h2 {
 
 @media (max-width: 767px) {
   .home {
-    max-height: 700px;
-    margin-top: 20px;
+    max-height: 100vh;
+    margin-top: 20%;
   }
 
   .home .hero {

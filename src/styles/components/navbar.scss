@@ -50,11 +50,8 @@
     font-size: 18px;
     color: #00c5ff !important;
     padding: 0px !important;
-    // max-width: 350px;
-    // margin-right: 63px;
     flex-direction: row !important;
-    // width: auto !important;
-    max-width: 280px !important;
+    max-width: 300px !important;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin-top: 0px;
@@ -64,24 +61,20 @@
 
   .navbar-collapse {
     position: absolute;
-    left: 65px; /* Align dropdown content to the right */
-    width: auto; /* Adjust width as needed */
-    z-index: 1000; /* Ensure it's above other content */
-    display: flex; /* Display flex for horizontal alignment */
-    flex-direction: row; /* Display links horizontally */
-    align-items: center; /* Align items vertically */
-    justify-content: flex-end; /* Align items to the right */
+    left: 65px; 
+    width: auto; 
+    z-index: 1000;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-end; 
   }
   
   .navbar-collapse .nav {
     flex-direction: row; /* Display links horizontally */
   }
   
-  .nav-link {
-    // padding: 20px 15px; /* Adjust link padding */
-    margin-top: 2px;
-    margin-left: 18px;
-  }
+
 
   .nav-item {
     font-weight: 600;
@@ -97,7 +90,7 @@
 
 .navbar .nav-link {
   font-family: 'Shadows Into Light Two', cursive !important;
-  color: #db23c7 !important;
+  color: lightcoral !important;
   font-weight: 700;
   
 }
@@ -108,17 +101,17 @@
 }
 
 .nav-link.active {
-  background-color: #9d008d99 !important;
+  background-color: lightcoral !important;
   color: #000 !important;
-  font-weight: 600 !important;
-  border-radius: 15px;
+  font-weight: 900 !important;
+  border-radius: 18px;
   border: 4px solid black;
 }
 
 @media (max-width: 767px) {
   .nav-link.active {
     background-color: transparent !important;
-    color: #db23c7 !important;
+    color: lightcoral !important;
     box-shadow: none !important;
     border: none !important;
   }

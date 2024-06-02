@@ -88,6 +88,11 @@ const Skills = () => {
             <Row className='skills-row-wrapper'>
 
               <Col xs={3} sm={3} md={3} lg={3} xl={3}>
+                <SiTypescript size='50px'></SiTypescript>
+                <p>TypeScript</p>
+              </Col>
+
+              <Col xs={3} sm={3} md={3} lg={3} xl={3}>
                 <DiReact size='50px'></DiReact>
                 <p>React</p>
               </Col>
@@ -184,10 +189,10 @@ const Skills = () => {
                 <p>Docker</p>
               </Col>
 
-              
 
-              
-              
+
+
+
 
             </Row>
 
@@ -268,7 +273,7 @@ const Skills = () => {
         <p id="skillsP"><span id="skillSpan">Other:</span> Axios, TablePlus, Netlify, Slack, Trello, Excalidraw, Figma</p>
       </div>
       <img id="wave2" src={wave} className={`fade-in ${showImage ? 'show' : ''}`}></img>
-      <button id="back-to-top" onClick={() => {
+      <button className={`fade-in ${showImage ? 'show' : ''}`} id="back-to-top" onClick={() => {
         window.scrollTo(0, 0)
         setTimeout(() => {
           window.scrollTo(0, 0)
