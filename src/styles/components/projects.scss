@@ -96,6 +96,7 @@
     // padding-right: 10px;
   }
 
+
   .card-image {
     width: 100%;
     max-width: 300px;
@@ -120,8 +121,26 @@
   font-weight: 600;
 }
 
+
+.card-subtitle {
+  background-color: #86d7ec;
+  font-size: 20px;
+  font-family: 'Shadows Into Light Two', cursive !important;
+  padding-bottom: 20px;
+  color: lightcoral !important;
+  font-weight: 600;
+}
+
+
 @media (max-width: 767px) {
 
+  .card-title {
+    color: lightcoral;
+  }
+
+  .card-subtitle {
+    color:#3c45b4f0 !important;
+  }
 
   #projects {
     width: 320px;
@@ -161,7 +180,7 @@
     width: 340px !important;
     background-color: #b9d6f0 !important;
     border: none !important;
-  
+    
   }
 
   .scroll-content {
@@ -183,15 +202,10 @@
   .wrap {
     background-color: #b9d6f0 !important;
   }
-}
 
-.card-subtitle {
-  background-color: #86d7ec;
-  font-size: 20px;
-  font-family: 'Shadows Into Light Two', cursive !important;
-  padding-bottom: 20px;
-  color: lightcoral !important;
-  font-weight: 600;
+  .proLinks a {
+    color: lightcoral !important;
+  }
 }
 
 .projects-scroll-container {
@@ -235,7 +249,6 @@
   flex: 0 0 auto;
 }
 
-/* Remove any default margins or paddings from the cards */
 .scroll-content .card {
   margin: 0;
 }
@@ -248,6 +261,7 @@
   width: 10px;
   height: 10px;
   
+  
 }
 
 
@@ -258,7 +272,6 @@
 
 .projects-scroll-container::-webkit-scrollbar-thumb:hover {
   background-color: #828282;
-  /* Change color on hover */
 }
 
 #sub {

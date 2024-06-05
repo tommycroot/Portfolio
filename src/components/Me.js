@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import giphy from '../images/giphy.gif'
-import me from '../images/me.jpg'
+import me2 from '../images/me2.jpg'
 import background2 from '../images/background2.jpg'
 import nba from '../images/nba.jpg'
 import { useEffect, useState } from 'react'
@@ -10,7 +10,7 @@ import wave from '../images/wave.gif'
 
 
 const About = () => {
-  const images = [background2, me]
+  const images = [me2, background2]
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -58,10 +58,10 @@ const About = () => {
           <p id="aboutlink"><Link to="https://github.com/tommycroot"> LinkedIn </Link></p>
         </div>
         <div className='aboutText'>
-          <p id="aboutp">Thanks for checking out my portfolio! I&apos;ve been learning to code from Southend in Essex, which is an easy commute into London. I&apos;m a former laboratory technician turned coder, who is driven, passionate and eager to kickstart a career in software engineering. As someone who&apos;s always been interested in technology and driven by creativity and purpose, my enthusiasm for coding stems from the fulfilment of witnessing my creations take shape. After enrolling into General Assembly&apos;s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience, I&apos;m thrilled to be finally seeking my first role in the field. 
+          <p id="aboutp">Thanks for checking out my portfolio! I&apos;m a laboratory technician turned coder, who is driven, passionate and eager to kickstart a career in software engineering. As someone who&apos;s always been interested in technology and inspired by creativity and purpose, my love of coding stems from the fulfilment of witnessing my creations take shape. Right now, I particularly enjoy designing intuitive and visually appealing interfaces. I also find the process of thinking about what the user would want and what they might like in the future to enhance their experience fascinating. After enrolling into General Assembly&apos;s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience, I&apos;m thrilled to be finally seeking my first role in the field. 
           </p>
           <h2 id="hobbies">Music   <img id="music" src={music}></img></h2>
-          <p id="aboutp">I love a variety of music and practice classical guitar. I particularly enjoy reinterpeting songs into my own arrangements and writing my own compositions, which are occasionally posted to social media. I love the expression of creativity, the journey of mastering a particular musical phrase, the problem solving it entails and the meditative state my mind gets in whilst playing. Some of my favourite artists include The Doors, The Clash, Nas, A Tribe Called Quest, Metallica, Bob Dylan, Johnny Cash and Frank Sinatra. </p>
+          <p id="aboutp">I&apos;m passionate about music and regularly practice classical guitar. I particularly enjoy reinterpeting songs into my own arrangements and writing my own compositions, which are occasionally posted to social media. I love the expression of creativity, the journey of mastering a particular musical phrase and the problem solving it entails. Some of my favourite artists include The Doors, Bob Dylan, The Clash, Tupac, Johnny Cash and Frank Sinatra. </p>
           <h2 id="hobbies2">Sport<img id="ball" src={ball}></img></h2>
           <p id="aboutp">I&apos;ve spent much of my life playing sports and I still enjoy working out and being active. Running is something I particularly enjoy because it helps clear my mind and provides me with time to reflect. Some of my favourite sports include football, basketball and skateboarding. Although <strong>&quot;technically&quot;</strong> not a sport, I&apos;m also a lifelong wrestling fan.</p>
 

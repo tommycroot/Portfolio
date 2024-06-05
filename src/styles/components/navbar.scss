@@ -71,7 +71,7 @@
   }
   
   .navbar-collapse .nav {
-    flex-direction: row; /* Display links horizontally */
+    flex-direction: row; 
   }
   
 
@@ -111,10 +111,17 @@
 @media (max-width: 767px) {
   .nav-link.active {
     background-color: transparent !important;
-    color: lightcoral !important;
+    color: #3c45b4f0!important;
     box-shadow: none !important;
     border: none !important;
   }
+
+  .navbar .nav-link {
+    font-weight: 900 !important;
+  }
+  
+
+  
 }
 
 

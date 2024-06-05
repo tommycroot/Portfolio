@@ -57,7 +57,7 @@ const Projects = () => {
                         <div className='proLinks'>
                           <p id="aboutlink"><Link to="https://nambrcapital.com/" target="_blank"> App Link</Link></p>
                         </div>
-                        <Card.Text>Designed and developed a professional website for a close friend&apos;s financial advisory business. I consulted with the client to understand their desired features and what information to include, and was given creative freedom to develop my own vision. This React site was built using TypeScript, a new language I&apos;ve been eager to try out after learning it by developing projects through online courses. I also experimented with KeyFrames for interactive CSS animations, pushing myself creatively on the design side.
+                        <Card.Text>Designed and developed a professional website for a close friend&apos;s financial advisory business. I consulted to understand their desired features and what information to include, and was given creative freedom to develop my own vision. This is a React site built with TypeScript, a new language I&apos;ve been eager to use more after developing projects with it through online courses. I also experimented with KeyFrames for interactive CSS animation as I wanted to push myself creatively on the design side.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -73,14 +73,7 @@ const Projects = () => {
                         <div className='proLinks'>
                           <p id="aboutlink"><Link to="https://encore-app.com/" target="_blank"> App Link</Link></p>
                         </div>
-                        <Card.Text>A gig database app utilising a Python Django
-                          API and Django REST Framework to handle a PostgreSQL
-                          database. The frontend was built with React.js and Bootstrap.
-                          A social media hub intended for users to share attended gigs and
-                          upcoming events. Users can engage in community interaction by commenting on
-                          each other&apos;s gig pages and use the follower system to stay updated. Includes API integrations with Last.fm for artist
-                          suggestions and Google Places for venue suggestions. Click <Link id='video' to="https://www.linkedin.com/feed/update/urn:li:activity:7171092193913356290/" target="_blank">here</Link> for a video
-                          demonstration and to learn more.
+                        <Card.Text>A social media hub intended for users to share attended gigs and upcoming events. Users can engage in community interaction by commenting on each other&apos;s gig pages and use the follower system to stay updated with each other. Includes API integrations with Last.fm for artist suggestions and Google Places for venue suggestions. Click <Link id='video' to="https://www.linkedin.com/feed/update/urn:li:activity:7171092193913356290/" target="_blank">here</Link> for a video demonstration and to learn more. This gig database app utilises a Python Django API and Django REST Framework to handle a PostgreSQL database with a frontend built with React.js and Bootstrap.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -96,7 +89,7 @@ const Projects = () => {
                         <div className='proLinks'>
                           <p id="aboutlink"><Link to="https://tommycroot.github.io/Asterix/" target="_blank"> App Link</Link></p>
                         </div>
-                        <Card.Text>This is a grid-based Space Invaders game made using solely HTML, CSS and JavaScript and it served as a fun distraction/side project during the summer to keep my front-end skills sharp whilst I continued development on another full-stack web app. Inspired by the Asterix cartoon, the game challenges players to defend Gaul against pesky Romans. Added features include cut scenes, three levels to beat and the ability to select different characters.
+                        <Card.Text>This is a grid-based Space Invaders game made using solely HTML, CSS and JavaScript and it served as a fun distraction/side project during the summer to keep my front-end and function writing skills sharp whilst I continued development on another full-stack web app. Inspired by the Asterix cartoon, the game challenges players to defend Gaul against pesky Romans. Added features include cut scenes, three levels to beat and the ability to select different characters.
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -131,7 +124,7 @@ const Projects = () => {
                           <p id="aboutlink"><Link to="http://haglproject.herokuapp.com/" target="_blank"> App Link</Link></p>
                           <p id="aboutlink"><Link to="https://github.com/tommycroot/project3#readme" target="_blank"> README </Link></p>
                         </div>
-                        <Card.Text>In a group of three, we built an online marketplace that gives users the ability to message and swap their used items with each other. This is a comprehensive application built from the ground up, implementing full-stack capabilities with CRUD functionality and leveraging the MERN stack (MongoDB, Express.js, React.js, and Node.js). My main focus was on the back-end configurations, and I took charge of the front-end forms, handling login and registration pages, alongside the edit page.</Card.Text>
+                        <Card.Text>In a group of three, we built an online marketplace that gives users the ability to swap their used items with each other. The task was to build a comprehensive application from the ground up in a week, implementing full-stack capabilities with CRUD functionality using the MERN stack (MongoDB, Express.js, React.js, and Node.js). My main focus was on the back-end configurations and helping out with the message functionality. I also took charge of the front-end forms, handling login and registration pages, alongside the edit page.</Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -163,7 +156,7 @@ const Projects = () => {
                           <p id="aboutlink"><Link to="https://tommycroot.github.io/Project-1-Frogger/" target="_blank"> App Link</Link></p>
                           <p id="aboutlink"><Link to="https://github.com/tommycroot/Project-1-Frogger#readme" target="_blank"> README</Link></p>
                         </div>
-                        <Card.Text>Designed and developed a grid based game with JavaScript, HTML & CSS. I based mine on the arcade game Frogger and styled it with a SpongeBob theme. This was a fun challenge that required a solid understanding of intervals and scope and I learned a lot about implementing objects, functions and methods.</Card.Text>
+                        <Card.Text>Designed and developed a grid based game with JavaScript, HTML & CSS. I based mine on the arcade game Frogger and styled it with a SpongeBob theme. This was a fun challenge that required a solid understanding of intervals and scope. I also learned a lot about implementing objects, functions and methods.</Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>
