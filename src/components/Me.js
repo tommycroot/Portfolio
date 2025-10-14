@@ -53,12 +53,12 @@ const About = () => {
         <h1 className='display-3' id="projectTitle">About Me</h1>
         <img id="me" src={images[index]} onAnimationEnd={handleAnimationEnd}></img>
         <div className='links'>
-          <p id="aboutlink"><Link to="https://github.com/tommycroot"> GitHub </Link></p>
           <p id="aboutlink"><a href="mailto:croot.thomas@gmail.com">Email</a></p>
+          <p id="aboutlink"><Link to="https://github.com/tommycroot"> GitHub </Link></p>
           <p id="aboutlink"><Link to="https://github.com/tommycroot"> LinkedIn </Link></p>
         </div>
         <div className='aboutText'>
-          <p id="aboutp">Thanks for checking out my portfolio! I&apos;m a laboratory technician turned coder, who is driven, passionate and eager to kickstart a career in software engineering. As someone who&apos;s always been interested in technology and inspired by creativity and purpose, my love of coding stems from the fulfilment of witnessing my creations take shape. Right now, I particularly enjoy designing intuitive and visually appealing interfaces. I also find the process of thinking about what the user would want and what they might like in the future to enhance their experience fascinating. After enrolling into General Assembly&apos;s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience, I&apos;m thrilled to be finally seeking my first role in the field. 
+          <p id="aboutp">Hey! Thanks for checking out my portfolio! I&apos;m a laboratory technician turned coder, who is driven, passionate and eager to kickstart a career in software engineering. As someone who&apos;s always been interested in technology and inspired by creativity and purpose, my love of coding stems from the fulfilment of witnessing my creations take shape. Right now, I particularly enjoy designing intuitive and visually appealing interfaces. I also find the process of thinking about what the user would want and what they might like in the future to enhance their experience fascinating. After enrolling into General Assembly&apos;s Software Engineering course to further my knowledge at a rapid pace and gain quantifiable experience, I&apos;m thrilled to be finally seeking my first role in the field. 
           </p>
           <h2 id="hobbies">Music   <img id="music" src={music}></img></h2>
           <p id="aboutp">I&apos;m passionate about music and regularly practice classical guitar. I particularly enjoy reinterpeting songs into my own arrangements and writing my own compositions, which are occasionally posted to social media. I love the expression of creativity, the journey of mastering a particular musical phrase and the problem solving it entails. Some of my favourite artists include The Doors, Bob Dylan, The Clash, Tupac, Johnny Cash and Frank Sinatra. </p>
